@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(3,1fr);
-    flex-wrap: wrap;
+    /* grid-auto-flow:row; */
     grid-gap: 1rem;
     width: 86%;
     margin: 5% auto;
@@ -78,4 +78,12 @@
     /* bottom: -72%; */
     width: 430px;
     height: 480px;
+}
+@media only screen and (max-width: 500px){
+ .explore-grid{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+ }   
 }

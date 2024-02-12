@@ -9,16 +9,7 @@ const Navbar = () => {
     const toggleMenu = () => {
         setShowMenu(!showMenu); // Toggle menu visibility
     };
-    // const navbar=querySelector();
-    // burger = document.querySelector('burger')
-    // navbar = document.querySelector('navbar')
-    // navList = document.querySelector('.nav-list')
-    // 
-    // burger.addEventListner('click', () => {
-    // rightNav.classList.toggle('v-class-resp');
-    // navList.classList.toggle('v-class-resp');
-    // navbar.classList.toggle('h-nav-resp')
-    // })
+
     return (
         <div>
             <div className={`navbar h-nav-resp ${showMenu ? 'show-menu' : ''}`}>
