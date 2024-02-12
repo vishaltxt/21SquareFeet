@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.first-section{
+    height: 56vh;
+}
+.knowprocess-background-container {
+    background-image: url('./knowourprocess images/div.elementor-background-overlay.png');
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+}
+#knowprocess{
+    display: flex;
+    gap: 12%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.knowprocess-div1{
+    margin-left: 16%;
+}
+.knowprocess-p1{
+    color: rgba(255, 255, 255, 1);
+    font: 'Work Sans';
+    font-weight: 700;
+    font-size: 26px;
+}
+.knowprocess-p2{
+    color: rgba(255, 255, 255, 1);
+    font: 'Work Sans';
+    font-weight: 700;
+    font-size: 26px;
+}
+.knowprocess-btn{
+    color: rgba(43, 42, 41, 1);
+    background-color: rgba(254, 198, 63, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px;
+    width: 120px;
+    box-shadow: 2px 2px grey;
+    margin-top: 5%;
+}
+.knowprocess-div2{
+    margin-top: 4%;
+}
+.img{
+    position: absolute;
+    width: 330px;
+    height: 110px;
+    top: 68%;
+}
+.second-section{
+    background-image: url('./knowourprocess images/div.elementor-background-overlay\ \(1\).png');
+    position: relative;
+    background-size: cover;
+    opacity: 100%;
+    width: 100%;
+    background-color: rgba(242, 243, 247, 1);
+    padding-bottom: 10%;
+}
+.knowprocess-lower{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    gap: 13%;
+    text-align: center;
+}
+.one{
+    padding: 3% 0% 3% 8%;
+}
+.testimonials{
+    color: rgba(254, 198, 63, 1);
+    font: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+}
+.testimonials2{
+    position: relative;
+    color: rgba(24, 25, 28, 1);
+    font: 'Lexend';
+    font-weight: 700;
+    font-size: 36px;
+}
+.pseudo{
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    top: 20.4%;
+    left: 7.8%;
+}
+.yellow{
+    width: 55px;
+    height: 55px;
+}
+.steps{
+    color:  rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font: 'Roboto';
+    font-size: 16px;
+    padding: 5px;
+}
+.steps-p{
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+.diversity{
+    position: absolute; 
+    width: 32px;
+    height: 46px;
+    left: 25.9%;
+    top: 37.3%;
+}
+.supplier{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 47.8%;
+    top: 38.6%;
+}
+.call{
+    position: absolute;
+    width: 32px;
+    height: 35px;
+    right: 27%;
+    top: 38.6%;
+}

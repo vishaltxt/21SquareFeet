@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.know{
+    margin-top: 8%;
+    margin-left: 72%;
+}
+.know-p1{
+    color: rgba(254, 198, 63, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+}
+.know-p2{
+    color: rgba(43, 42, 41, 1);
+    font-size: 30px;
+    font-weight: 700;
+    font: 'Roboto';
+}
+.know-mid{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding-top: 1%;
+    gap: 30%;
+}
+.know-about{
+    position:absolute;
+    left: 10%;
+    width: 270px;
+    height: 320px;
+}
+.know-circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 285%;
+    left: 16%;
+}
+.know-about2{
+    position: relative;
+    top: 63%;
+    left: 65%;
+    width: 250px;
+    height: 140px;
+}
+.blur{
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    left: 28.5%;
+    top: 260%;
+}
+.know-foot{
+    background-color: rgba(254, 198, 63, 1);
+    margin-top: 6%;
+    height: 40px;
+    width: 100%;
+}
+.know-paras{
+    color:  rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+}
+.know-mid-p{
+    color: rgba(24, 25, 28, 1);
+    font: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    margin: 20px 0px 15px 0px;
+}
+.parrow-flex{
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 2%;
+}
+.parrow{
+    margin-top: 0.8%;   
+    width: 20px;
+    height: 20px;
+}
+@media only screen and (min-width: 1100px) {
+    .know-mid{
+        /* flex-direction: column; */
+        /* gap: 5%; */
+        /* width: 80%; */
+    }
+    .know-about{
+        /* position: relative; */
+    }
+    .know-circle{
+        /* position: relative; */
+    }
+    .know-about2{
+        /* position: relative; */
+    }
+}

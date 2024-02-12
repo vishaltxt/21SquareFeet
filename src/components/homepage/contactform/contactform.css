@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contactform-main{
+    /* background-image: url(''); */
+    background-size: cover;
+    height: 60vh;
+    background-color:  rgba(254, 204, 0, 1);
+    width: 70%;
+    margin:6% auto;
+}
+.contactform-inner{
+    background-color: white;
+    width: 50%;
+    height: 66%;
+    margin:4% auto;
+}
+.cf-p1{
+    color: rgba(24, 25, 28, 1);
+    font: 'Roboto';
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 2%;
+    margin-left: 6%;
+}
+#cf-inner{
+    padding-top: 4%;
+}
+.cf-inner-two{
+    text-align: center;
+}
+.my-r{
+    margin-right: 1.1rem;
+}
+.cf-inner-two input{
+    margin-top: 0.8rem;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-radius: 4px;
+}
+.cf-mail{
+    width: 87%;
+}
+.cf-message{
+    width: 87%;
+    margin-top: 0.8rem;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid rgba(242, 242, 242, 1);
+    border-radius: 4px;
+}
+.contactform-btn{
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid rgba(254, 204, 0, 1);
+    background-color: rgba(254, 204, 0, 1);
+    box-shadow: 3px 3px gray;
+    width: 140px;
+    padding: 7px;
+    margin-top: 4%;
+    margin-left: 7%;
+}

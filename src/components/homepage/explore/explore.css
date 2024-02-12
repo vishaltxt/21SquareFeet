@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.left{
+    position: absolute;
+    width: 170px;
+    height: 280px;
+    top: 80%;
+}
+.explore-upper{
+    padding-top: 4%;
+    padding-left: 8%;
+}
+.explore-p1{
+    color: rgba(254, 198, 63, 1);
+    font: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+}
+.explore-p2{
+    color: rgba(24, 25, 28, 1);
+    font: 'Roboto';
+    font-size: 32px;
+    font-weight: 700;
+}
+.explore-main-buttons{
+    text-align: center;
+}
+.explore-contractors{
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid rgba(254, 204, 0, 1);
+    background-color: rgba(254, 204, 0, 1);
+    border-radius: 40px;
+    padding: 15px;
+    width: 290px;
+    margin-top: 3%;
+}
+.explore-materials{
+    margin-left: 2%;
+    color: rgba(43, 42, 41, 1);
+    font: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 40px;
+    padding: 1px;
+    width: 260px;
+}
+.explore-grid{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(3,1fr);
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    width: 86%;
+    margin: 5% auto;
+}
+.explore-width{
+    width: 78%;
+}
+.explore-pp{
+    font: 'Roboto';
+    font-weight: 400;
+    color: rgba(43, 42, 41, 1);
+    font-size: 16px;
+    text-align: center;
+    width: 75%;
+}
+.right{
+    position: absolute;
+    top: 185%;
+    right: 0%;
+    /* bottom: -72%; */
+    width: 430px;
+    height: 480px;
+}
