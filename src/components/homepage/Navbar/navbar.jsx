@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import squarefeet from './navbar images/21SQFT B 1.png'
 import circle from './navbar images/Ellipse 1.png'
@@ -18,10 +19,10 @@ const Navbar = () => {
                 </div>
                 <div className='div-2'>
                     <ul className={`navbar-ul v-class-resp ${showMenu ? 'show-menu' : ''}`}>
-                        <li>Home</li>
-                        <li>Categories</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/category">Categories</Link></li>
+                        <li><Link to="/blog">About Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                     <img className='circle' src={circle} alt=''></img>
                     <img className='search' src={search} alt=''></img>

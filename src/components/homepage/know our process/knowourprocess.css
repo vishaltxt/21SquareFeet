@@ -132,14 +132,108 @@
     top: 38.6%;
 }
 @media only screen and (max-width: 500px){
+    .first-section{
+        height: 13.5vh;
+    }
+    .knowprocess-background-container {
+        background-image: url('./knowourprocess images/div.elementor-background-overlay.png');
+        position: absolute;
+        background-size: cover;
+        width: 60%;
+    }
     #knowprocess{
-        display: flex;
-        flex-direction: column;
+        margin-top: 5%;
+    }
+    .knowprocess-div1{
+        margin-left: 6%;
+    }
+    .knowprocess-p1{
+        font-size: 16px;
+    }
+    .knowprocess-p2{
+        font-size: 16px;
+    }
+    .knowprocess-btn{
+        padding: 2px;
+        width: 90px;
+        box-shadow: 1px 1px grey;
+        margin-top: 5%;
     }
     .img{
-        /* width: 30%; */
-        /* height: 36%; */
-        /* display: flex; */
-        /* flex-direction: column; */
+        position: absolute;
+        width: 160px;
+        height: 54px;
+        top: 60%;
+        left: 43%;
+    }
+    .second-section{
+        background-image: url('./knowourprocess images/div.elementor-background-overlay\ \(1\).png');
+        position: relative;
+        background-size: cover;
+        opacity: 100%;
+        width: 60%;
+        background-color: rgba(242, 243, 247, 1);
+        padding-bottom: 10%;
+    }
+    .knowprocess-lower{
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: auto;
+        gap: 13%;
+        text-align: center;
+    }
+    .one{
+        padding: 3% 0% 3% 8%;
+    }
+    .testimonials{
+        font-size: 10px;
+    }
+    .testimonials2{
+        /* position: relative; */
+        font-size: 20px;
+    }
+    .pseudo{
+        position: absolute;
+        width: 20px;
+        height: 12px;
+        top: 12.5%;
+        left: 6%;
+    }
+    .yellow{
+        position: absolute;
+        right: 6%;
+        width: 50px;
+        height: 50px;
+    }
+    .steps{
+        font-size: 12px;
+        padding: 5px;
+        margin-top: 12px;
+    }
+    .steps-p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .diversity{
+        position: absolute; 
+        width: 32px;
+        height: 46px;
+        left: 80.2%;
+        top: 21.3%;
+    }
+    .supplier{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 80%;
+        top: 44%;
+    }
+    .call{
+        position: absolute;
+        width: 32px;
+        height: 35px;
+        right: 9%;
+        top: 65%;
     }
 }

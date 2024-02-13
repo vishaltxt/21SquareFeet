@@ -3,7 +3,7 @@
     padding: 0px;
 }
 .contactform-main{
-    /* background-image: url(''); */
+    background-image: url('contactform images/cf-background.png');
     background-size: cover;
     height: 60vh;
     background-color:  rgba(254, 204, 0, 1);
@@ -21,7 +21,7 @@
     font: 'Roboto';
     font-weight: 700;
     font-size: 40px;
-    padding-top: 2%;
+    padding-top: 1%;
     margin-left: 6%;
 }
 #cf-inner{
@@ -71,4 +71,63 @@
     padding: 7px;
     margin-top: 4%;
     margin-left: 7%;
+}
+@media only screen and  (max-width: 500px) {
+    .contactform-main{
+        background-image: url('contactform images/cf-background.png');
+        background-size: cover;
+        height: 33vh;
+        background-color:  rgba(254, 204, 0, 1);
+        width: 54%;
+        margin:6% 3%;
+    }
+    .contactform-inner{
+        background-color: white;
+        width: 70%;
+        height: 78%;
+        margin:4% auto;
+    }
+    .cf-p1{
+        font-size: 24px;
+        padding-top: 2%;
+        margin-left: 6%;
+    }
+    #cf-inner{
+        padding-top: 4%;
+    }
+    .cf-inner-two{
+        text-align: center;
+
+    }
+    .my-r{
+        width: 88%;
+        margin: auto;
+        /* margin-right: 1.1rem; */
+    }
+    .cf-inner-two input{
+        margin-top: 0.8rem;
+        background-color: rgba(242, 242, 242, 1);
+        font-size: 10px;
+        padding: 8px;
+        border: 1px solid rgba(242, 242, 242, 1);
+        border-radius: 4px;
+    }
+    .cf-mail{
+        width: 87%;
+    }
+    .cf-message{
+        width: 87%;
+        font-size: 12px;
+        padding: 8px;
+        border: 1px solid rgba(242, 242, 242, 1);
+        border-radius: 4px;
+    }
+    .contactform-btn{
+        font-size: 8px;
+        box-shadow: 3px 3px gray;
+        width: 70px;
+        padding: 5px;
+        margin-top: 8%;
+        margin-left: 7%;
+    }
 }

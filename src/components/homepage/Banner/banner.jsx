@@ -1,7 +1,7 @@
 import React from 'react'
 import './banner.css'
-import rectangle1 from './banner images/Rectangle 7.png'
-import rectangle2 from './banner images/Rectangle 8.png'
+// import rectangle1 from './banner images/Rectangle 7.png'
+// import rectangle2 from './banner images/Rectangle 8.png'
 import layer from './banner images/rs-layer-wrap → rs-loop-wrap → rs-mask-wrap → rs-layer.png'
 import search1 from './banner images/Group 3.png'
 // import cement from './banner images/cement 1.png'
@@ -19,8 +19,8 @@ const Banner = () => {
                         <button className='banner-btn'>Connect Now</button>
                     </div>
                     <div>
-                        <img className='rectangle-1' src={rectangle1} alt=''></img>
-                        <img className='rectangle-2' src={rectangle2} alt=''></img>
+                        {/* <img className='rectangle-1' src={rectangle1} alt=''></img> */}
+                        {/* <img className='rectangle-2' src={rectangle2} alt=''></img> */}
                     </div>
                 </div>
                 <div className='lower-container'>

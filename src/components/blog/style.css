@@ -1,0 +1,303 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    height:135rem;
+    width:100%;
+    background-color: #f0efee;
+    border: 0.01px solid black;
+   
+}
+.container_0{
+    height:150rem;
+    width:100%;
+    background-color: #f0efee;
+    border: 0.001px solid black;
+   
+}
+.container-form{
+    height:130rem;
+    width:90%;
+    margin-top: 5%;
+ margin-left: 5%;
+   background-color: white;
+    /* border: 2px solid black; */
+}
+.container-form0{
+    height:140rem;
+    width:90%;
+    margin-top: 5%;
+ margin-left: 5%;
+   background-color: white;
+    /* border: 2px solid black; */
+}
+.gap{
+    height: 15vh;
+    width:100% ;
+   
+    background-color: #f0efee;
+   
+}
+.container1{
+    height:auto;
+    width:90%;
+    margin-left: 5%;
+   
+    
+    background-color: white;
+    /* border: 2px solid black; */
+}
+
+.container10{
+    height:85vh;
+    width:90%;
+    margin-top: 0%;
+    margin-left: 5%;
+    background-color: white;
+   
+}
+.img img{
+    height: 45%;
+    width: 95%;
+    margin-top: 5%;
+}
+.img1 img{
+    height: 45%;
+    width: 85%;
+   
+}
+.content{
+    margin-top: 2%;
+}
+.content span{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+.content0{
+    margin-top: 2%;
+}
+.content0 span{
+    font-size: 32px;
+    font-weight: 500;
+    
+}
+.paragarph_1{
+    margin-top: 2%; 
+}
+.paragarph_1 p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.img0 img{
+ height: 30vh;
+ width: 30%;
+ margin-top: 5%;
+}
+.content1{
+    margin-top: 2%;
+}
+.content1 p{
+    color: rgb(66, 66, 94);
+    font-weight: 700;
+    font-size: 20px;
+}
+.content2{
+    width: 100%;
+}
+.link{
+    margin-top: 3%;
+    
+}
+a{
+    color: gold;
+    text-decoration: none;
+}
+.paragarph{
+    margin-top: 2%;
+    font-size: 16px;
+    gap: 20px;
+    font-weight: 300;
+}
+.paragarph1 p{
+    margin-top: 2%;
+    font-style: italic;
+    font-size: 16px;
+    gap: 20px;
+    font-weight: 300;
+}
+.paragarph2 p{
+    margin-top: 2%;
+    font-size: 16px;
+    gap: 20px;
+    font-weight: 300;
+}
+.text{
+    margin-top: 2%;
+}
+.text textarea{
+    height: 30vh;
+    width: 100%;
+    border: 2px solid #f0efee;
+    background-color: #f0efee;
+}
+.form{
+    display: flex;
+    margin-top: 2%;
+    gap: 20px;
+}
+.form input{
+    height: 6vh;
+    width: 30%;
+    gap: 20px;
+    background-color: #eeeff3;
+    border: 2px solid #f0efee;
+}
+.check{
+    display: flex;
+    margin-top: 2%;
+    gap: 10px;
+}
+.btn{
+    margin-top: 2%;
+}
+.btn button{
+    height: 50px;
+    width: 15%;
+    border: gold;
+    color: black;
+    font-size: large;
+    font-weight: 400;
+    background-color: gold;
+
+}
+.icon{
+    margin-top: 1%;
+    display: flex;
+    
+}
+.icons{
+    height: 15vh;
+    width: 80%;
+    border: 0px solid black;
+    
+}
+/* @media (max-width:1024px) {
+    container_0{
+        
+        height: 30%;
+    }
+    
+    
+} */
+@media (max-width:1024px) {
+    
+    .container_0{
+        height: 40%;
+    }
+
+}
+@media (max-width:1024px) {
+    
+    .container{
+        height: 40%;
+    }
+
+}
+@media (max-width:768px) {
+    
+    .container{
+        height: 60%;
+    }
+
+}
+@media (max-width:364px) {
+    
+    .container{
+        height: 0%;
+    }
+
+}
+@media (max-width:364px) {
+    
+    .container10{
+        height: 20%;
+        font-size: 10px;
+    }
+
+}
+@media (max-width:364px) {
+    
+    .form text{ 
+       display: inline-block;
+       box-sizing: inherit;
+    }
+
+}
+@media (max-width:376px)  {
+    .btn button{
+        width: 80%;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:364px)  {
+    .check{
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:768px)  {
+    .img0 img{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+@media (max-width:980px)  {
+    .btn button{
+        width: 30%;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:768px)  {
+    .check{
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+@media (max-width:364px)  {
+    .img0 img{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media (max-width:1024px) {
+    
+    .container-form0{
+        height: 10%;
+    }
+
+}
+@media (max-width:768px) {
+    
+    .container_0{
+        height: 40%;
+    }
+
+}
+@media (max-width:768px) {
+    
+    .container-form0{
+        height: 10%;
+    }
+
+}

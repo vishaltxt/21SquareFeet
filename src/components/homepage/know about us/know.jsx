@@ -21,7 +21,7 @@ const Know = () => {
                         <img className='know-about2' src={about2} alt=''></img>
                         <img className='blur' src={blur} alt=''></img>
                     </div>
-                    <div>
+                    <div className='know-mid-resp'>
                         <p className='know-paras'>Welcome to 21SQFT.com , an online platform for finding and hiring the best contractors and material vendors for your construction projects. Whether you are building a new house, a new office, or a new commercial complex, we can help you connect with the most qualified or experienced contractors/vendors in your area.21SQFT.com is more than just a directory of contractors, it is a complete solution that helps you plan, manage, and execute your construction project from start to finish.</p>
                         <p className='know-mid-p'>What Sets Us Apart:</p>
                         <div className='parrow-flex'>

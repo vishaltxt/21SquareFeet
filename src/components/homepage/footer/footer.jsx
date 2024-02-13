@@ -13,13 +13,14 @@ const Footer = () => {
         <div>
           <img className='footer-squarefeet' src={squarefeet} alt=""></img>
           <p className='footer-p2'>Welcome to our 21 sq ft.com</p>
-          <div>
+          <div className='footer-images-gap'>
             <img className='twitter' src={twitter} alt=""></img>
             <img className='facebook' src={facebook} alt=""></img>
             <img className='linkedin' src={linkedin} alt=""></img>
             <img className='instagram' src={instagram} alt=""></img>
           </div>
         </div>
+        {/* <div className='footer-midd-flex'> */}
         <div className='footer-p-gap'>
           <p className='footer-p1'>Links</p>
           <p className='footer-p2'>Categories</p>
@@ -43,6 +44,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   )
 }
