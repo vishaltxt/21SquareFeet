@@ -82,9 +82,9 @@
     width: 20px;
     height: 20px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 320px) {
     .know{
-        width: 40%;
+        width: 50%;
         margin-top: 2%;
         margin-left: 22%;
     }
@@ -97,23 +97,21 @@
     .know-mid{
         display: flex;
         flex-direction: column;
-        width: 50%;
-        /* margin: auto; */
-        /* padding-top: 1%; */
-        /* gap: 40%; */
+        width: 86%;
     }
     .know-mid-resp{
         margin-top: 35%;
-        margin-left: -40%;
+        /* margin-left: -5%; */
     }
     .know-about{
         position:absolute;
-        left: 6%;
+        left: 13%;
         width: 120px;
         height: 130px;
     }
     .know-circle{
         position: relative;
+        left: 50%;
         width: 60px;
         height: 60px;
         /* top: 285%; */
@@ -121,7 +119,7 @@
     .know-about2{
         position: relative;
         top: 1%;
-        left: -28%;
+        left: 10%;
         width: 110px;
         height: 80px;
     }
@@ -133,12 +131,12 @@
     .know-foot{
         margin-top: 6%;
         height: 40px;
-        width: 60%;
+        width: 100%;
     }
     .know-paras{
-        width: 66%;
+        /* width: 100%; */
         text-align: start;
-        font-size: 10px;
+        font-size: 12px;
     }
     .know-mid-p{
         font-size: 12px;
@@ -150,7 +148,214 @@
     }
     .parrow{
         margin-top: 0.8%;   
+        width: 17px;
+        height: 17px;
+    }
+}
+@media (min-width:320px) and (max-width: 480px) {
+    .know{
+        width: 50%;
+        margin-top: 1%;
+        margin-left: 22%;
+    }
+    .know-p1{
+        font-size: 8px;
+    }
+    .know-p2{
+        font-size: 20px;
+    }
+    .know-mid{
+        display: flex;
+        flex-direction: column;
+        width: 86%;
+    }
+    .know-mid-resp{
+        margin-top: 22%;
+        /* margin-left: -5%; */
+    }
+    .know-about{
+        position:absolute;
+        left: 13%;
+        width: 150px;
+        height: 160px;
+    }
+    .know-circle{
+        position: relative;
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        /* top: 285%; */
+    }
+    .know-about2{
+        position: relative;
+        top: 1%;
+        left: 19%;
+        width: 130px;
+        height: 90px;
+    }
+    .blur{
+        position: absolute;
+        width: 30px;
+        height: 100px;
+    }
+    .know-foot{
+        margin-top: 6%;
+        height: 40px;
+        width: 85%;
+    }
+    .know-paras{
+        width: 80%;
+        text-align: start;
+        font-size: 12px;
+    }
+    .know-mid-p{
+        font-size: 12px;
+    }
+    .parrow-flex{
+        display: flex;
+        gap: 0.4rem ;
+        margin-top: 2%;
+    }
+    .parrow{
+        margin-top: 0.8%;   
+        width: 17px;
+        height: 17px;
+    }
+}
+@media (min-width:480px) and (max-width: 576px) {
+    .know{
+        width: 50%;
+        margin-top: 8%;
+        margin-left: 60%;
+    }
+    .know-p1{
+        font-size: 10px;
+    }
+    .know-p2{
+        font-size: 25px;
+    }
+    .know-mid{
+        display: flex;
+        flex-direction: column;
+        width: 86%;
+    }
+    .know-mid-resp{
+        margin-top: 22%;
+        /* margin-left: -5%; */
+    }
+    .know-about{
+        position:absolute;
+        left: 13%;
+        width: 180px;
+        height: 200px;
+    }
+    .know-circle{
+        position: absolute;
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        top: 174%;
+    }
+    .know-about2{
+        position: relative;
+        top: 1%;
+        left: 33%;
+        width: 175px;
+        height: 110px;
+    }
+    .blur{
+        position: absolute;
+        width: 30px;
+        height: 100px;
+    }
+    .know-foot{
+        margin-top: 6%;
+        height: 40px;
+        width: 100%;
+    }
+    .know-paras{
+        width: 96%;
+        text-align: start;
+        font-size: 14px;
+    }
+    .know-mid-p{
+        font-size: 12px;
+    }
+    .parrow-flex{
+        display: flex;
+        gap: 0.4rem ;
+        margin-top: 2%;
+    }
+    .parrow{
+        margin-top: 0.8%;   
+        width: 17px;
+        height: 17px;
+    }
+}
+@media (min-width:576px) and (max-width: 768px) {
+    .know{
+        margin-top: 8%;
+        margin-left: 70%;
+    }
+    .know-p1{
+        font-size: 14px;
+    }
+    .know-p2{
+        font-size: 30px;
+    }
+    .know-mid{
+        display: flex;
+        width: 115%;
+        padding-top: 1%;
+        gap: 20%;
+    }
+    .know-about{
+        position:absolute;
+        left: 7%;
+        width: 260px;
+        height: 320px;
+    }
+    .know-circle{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 316%;
+        left: 16%;
+    }
+    .know-about2{
+        position: relative;
+        top: 57%;
+        left: 67%;
+        width: 230px;
+        height: 140px;
+    }
+    .blur{
+        position: absolute;
+        width: 50px;
+        height: 200px;
+        left: 41%;
+        top: 280%;
+    }
+    .know-foot{
+        margin-top: 6%;
+        height: 40px;
+        width: 122%;
+    }
+    .know-paras{
+        font-size: 16px;
+    }
+    .know-mid-p{
+        font-size: 18px;
+        margin: 20px 0px 15px 0px;
+    }
+    .parrow-flex{
+        display: flex;
+        gap: 0.4rem;
+        margin-top: 2%;
+    }
+    .parrow{
+        margin-top: 0.8%;   
         width: 20px;
         height: 20px;
-       }
+    }   
 }

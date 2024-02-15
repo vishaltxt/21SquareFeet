@@ -11,7 +11,7 @@ const Contactform = () => {
                     <div id='cf-inner'>
                         <div className='cf-inner-two'>
                             <input className='my-r' placeholder='Name'></input>
-                            <input className='my-r' placeholder='Phone no.'></input>
+                            <input className='my-r-resp' placeholder='Phone no.'></input>
                         </div>
                         <div className='cf-inner-two'>
                             <input className='cf-mail' placeholder='Email'></input>
@@ -20,7 +20,7 @@ const Contactform = () => {
                             <textarea className="cf-message" name="text" cols="30" rows="3"
                                 placeholder="message"></textarea>
                         </div>
-                        <button className='contactform-btn'>Send</button>
+                        <button className='contact-form-btn'>Send</button>
                     </div>
                 </div>
             </div>

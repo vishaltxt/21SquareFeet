@@ -2,10 +2,13 @@ import React from 'react'
 import './contact.css'
 import { IoMdCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import Navbar from '../../homepage/Navbar/navbar';
+import Footer from '../../homepage/footer/footer';
 
 function Contact() {
     return (
         <>
+            <Navbar />
             <div className='contanier'>
                 <div className="imagebox">
                     <div className="contentText">
@@ -17,18 +20,18 @@ function Contact() {
                         <img src='image/div.jpg' alt='' />
                         <div className='pro'>
                             <div className='name'>
-                                <input type="text" placeholder='Name' /></div>
-                            <div className='email'><input type="email" placeholder='Email' /></div>
+                                <input className='cont-inputs' type="text" placeholder='Name' /></div>
+                            <div className='email'><input className='cont-inputs' type="email" placeholder='Email' /></div>
                         </div>
                         <div className='pro1'>
                             <div className='name'>
-                                <input type="no" placeholder='Phone no' /></div>
-                            <div className='email'><input type="text" placeholder='Service Ex Cement Supplier' /></div>
+                                <input className='cont-inputs' type="no" placeholder='Phone no' /></div>
+                            <div className='email'><input className='cont-inputs' type="text" placeholder='Service Ex Cement Supplier' /></div>
                         </div>
                         <div className='pro1'>
-                            <textarea type="text" placeholder='Your Message' />
+                            <textarea className='cont-textarea' type="text" placeholder='Your Message' />
                         </div>
-                        <button type='submit'>Send</button>
+                        <button className='cont-button' type='submit'>Send</button>
                     </div>
                     <div className='info1'>
                         <img src='image/div.jpg' alt='' />
@@ -59,8 +62,9 @@ function Contact() {
 
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
 
-export default Contact
+export default Contact;

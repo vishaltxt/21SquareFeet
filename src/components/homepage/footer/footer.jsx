@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link } from 'react-router-dom'
 import squarefeet from './footer images/Group 15.png'
 import twitter from './footer images/Item_margin.png'
 import facebook from './footer images/Item → Link.png'
@@ -29,11 +30,11 @@ const Footer = () => {
           <p className='footer-p2'>Blog</p>
           <p className='footer-p2'>Login</p>
         </div>
-        <div className='footer-p-gap'>
+        <div div className='footer-p-gap'>
           <p className='footer-p1'>Others</p>
-          <p className='footer-p2'>Privacy Policy</p>
-          <p className='footer-p2'>Terms and</p>
-          <p className='footer-p2'>Conditions</p>
+          <p className='footer-p2'><Link to="/privacy">Privacy Policy</Link></p>
+          <p className='footer-p2'><Link to="/terms">Terms and Conditions</Link></p>
+          {/* <p className='footer-p2'><Link to="/terms">Conditions</Link></p> */}
         </div>
         <div className='footer-p-gap'>
           <p className='footer-p1'>Newsletter</p>

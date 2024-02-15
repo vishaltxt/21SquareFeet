@@ -3,25 +3,28 @@
     margin:0%;
 }
 .form-container{
-    height: 100vh;
-    width: 100%;
+    height: 130vh;
+    width: 90%;
     text-align: left;
     display: flex;
     justify-content: center;
+    margin-left: 5%;
+    border:1px solid silver;
     /* align-items: center; */
 }
 .form{
-    height: auto;
-    width: 50%;
+    height: 125vh;
+    width: 60%;
     /* margin-left: 5%; */
     border-radius: 10px;
 
     /* margin-top: 20px; */
-    padding: 20px;
-    border:1px solid silver;
+    padding: 15px;
+    /* border:1px solid silver; */
 }
 .form1{
     height: 10vh;
+   
     /* width: 50%; */
     /* margin-left: 20%; */
     margin-top: 2%;
@@ -33,13 +36,14 @@
 }
 
 label{
+   
     font-size: large;
     font-weight: 500;
     width: 200px;
 }
 input{
-    height: 40px;
-    width: 60%;
+    height: 50px;
+    width: 50%;
     /* padding-left: 10px; */
     margin-left: 50px;
     background-color: #F3F3F3;
@@ -47,12 +51,23 @@ input{
     border:1px solid silver;
     /* border-radius: 5px; */
 }
-.indi{
+.indi input{
     height: 50px;
     width: 25%;
-
+border-radius: 0%;
     margin-left: 30%;
+    margin-top: 5%;
     padding-left: 10px;
+}
+.regi button{
+    height: 40px;
+    width: 15%;
+    margin-left: 35%;
+    margin-top: 4%;
+    background-color: gold;
+    border: gold;
+    border-radius: 0%;
+
 }
 button{
     height: 40px;
@@ -69,8 +84,28 @@ button{
     text-decoration: underline;
 }
 .brower{
-   
-    margin-left: 35%;
+height: 20%;
+width: 40%;
+
+    margin-left: 30%;
     margin-top: 5%;
-   
+}
+.face-regi{
+    display: flex;
+    height: 40px;
+    color: white;
+    gap: 10px;
+    text-align: center;
+    background-color: blue;
+    border: 2px solid blue;
+}
+.face-ragi{
+    display: flex;
+    height: 40px;
+    margin-top: 5px;
+    gap: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(83, 117, 212);
+    border: 2px solid rgb(83, 117, 212);
 }

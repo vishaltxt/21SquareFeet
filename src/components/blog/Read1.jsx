@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './blogstyle.css'
 
 function Read1() {
   return (

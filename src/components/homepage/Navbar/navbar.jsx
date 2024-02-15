@@ -21,12 +21,12 @@ const Navbar = () => {
                     <ul className={`navbar-ul v-class-resp ${showMenu ? 'show-menu' : ''}`}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/category">Categories</Link></li>
-                        <li><Link to="/blog">About Us</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                     <img className='circle' src={circle} alt=''></img>
-                    <img className='search' src={search} alt=''></img>
-                    <button className='nav-btn'>Register</button>
+                    <img className='navbar-search' src={search} alt=''></img>
+                    <button className='nav-btn'><Link to="/login">Register</Link></button>
                 </div>
                 <div className="burger" onClick={toggleMenu}>
                     <div className="line"></div>

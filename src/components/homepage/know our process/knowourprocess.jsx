@@ -20,14 +20,14 @@ const Knowourprocess = () => {
                                 <button className='knowprocess-btn'>Login Now</button>
                             </div>
                             <div className='knowprocess-div2'>
-                                <img className='img' src={img} alt=''></img>
+                                <img className='knowprocess-img' src={img} alt=''></img>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section className='second-section'>
                     <img className='pseudo' src={pseudo} alt=''></img>
-                    <div className='one'>
+                    <div className='kp-one'>
                         <p className='testimonials'>OUR TESTIMONIALS</p>
                         <p className='testimonials2'>Know our Process</p>
                     </div>
@@ -40,13 +40,13 @@ const Knowourprocess = () => {
                         </div>
                         <div>
                             <img className='yellow' src={yellow} alt=''></img>
-                            <img className='supplier' src={supplier} alt=''></img>
+                            <img className='knowprocess-supplier' src={supplier} alt=''></img>
                             <p className='steps'>Step 2</p>
                             <p className='steps-p'>Access detailed profiles of contractors and suppliers.</p>
                         </div>
                         <div>
                             <img className='yellow' src={yellow} alt=''></img>
-                            <img className='call' src={call} alt=''></img>
+                            <img className='kp-call' src={call} alt=''></img>
                             <p className='steps'>Step 3</p>
                             <p className='steps-p'>Initiate communication with preferred contractors/suppliers.</p>
                         </div>

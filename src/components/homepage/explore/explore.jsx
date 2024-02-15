@@ -32,7 +32,7 @@ const Explore = () => {
     };
     return (
         <div>
-            <img className='left' src={left} alt=''></img>
+            <img className='explore-left' src={left} alt=''></img>
             <div className='explore-upper'>
                 <p className='explore-p1'>CATEGORIES</p>
                 <p className='explore-p2'>Explore our categories</p>
@@ -43,7 +43,7 @@ const Explore = () => {
             </div>
             <div className='explore-grid'>
                 <div>
-                    <img className='explore-width' src={image1} alt=''></img>
+                    <img className='explore-width ew-three' src={image1} alt=''></img>
                     <p className='explore-pp'>Construction Contractors</p>
                 </div>
                 <div>
@@ -71,7 +71,7 @@ const Explore = () => {
                     <p className='explore-pp'>Interior Designers</p>
                 </div>
                 <div>
-                    <img className='explore-width' src={image8} alt=''></img>
+                    <img className='explore-width ew-three' src={image8} alt=''></img>
                     <p className='explore-pp'>Waterproofing</p>
                 </div>
                 <div>
@@ -99,7 +99,7 @@ const Explore = () => {
                     <p className='explore-pp'>Jcb Movers</p>
                 </div>
                 <div>
-                    <img className='explore-width' src={image15} alt=''></img>
+                    <img className='explore-width ew-three' src={image15} alt=''></img>
                     <p className='explore-pp'>Aluminum Fittings</p>
                 </div>
                 <div>
@@ -119,7 +119,7 @@ const Explore = () => {
                     <p className='explore-pp'>Architects</p>
                 </div>
             </div>
-            <img className='right' src={right} alt=''></img>
+            <img className='explore-right' src={right} alt=''></img>
         </div>
     )
 }

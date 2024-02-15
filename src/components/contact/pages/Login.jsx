@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './login.css'
 import { Link } from 'react-router-dom'
 
@@ -7,7 +7,6 @@ function Login() {
 
   return (
     <>
-
       <div className='container-log'>
         <div className='img1'>
           <img src='/image/div1.jpg' alt='img' />
@@ -16,11 +15,11 @@ function Login() {
           <div className='wel'>Welcome</div>
           <div className='div'>
 
-            <div className='user' ><Link>User</Link></div>
+            <div className='user' ><Link to='/login'>User</Link></div>
             <div className='supply'><Link to='/supplier'>Contractor/Supplier</Link></div>
           </div>
 
-          {/* {active === "userbtn" &&('rinfgfgnndkl')} */}
+
           <div className='info-log'>
             <div className='user-log'>
               <label>User Name</label>
@@ -50,13 +49,13 @@ function Login() {
             </div>
           </div>
           <div className='sub-login'>
-            <button>Login</button>
+            <button className='log-button'>Login</button>
           </div>
           <div className='do'> Do have this account
             <Link to='/signup'>Signup</Link></div>
         </div>
       </div>
-    </ >
+    </>
   )
 }
 
