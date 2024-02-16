@@ -1,10 +1,9 @@
 *{
     margin:0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
-.lwrapper{
+.afwrapper{
     position: fixed;
     background-color:rgba(189,189,189,189,.6);
 
@@ -12,36 +11,40 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-
 }
-.Lmain{
+
+
+
+
+.Lmain5{
     position: fixed;
     border:1px solid gray;
     box-shadow: 3px 2px 9px gray;
     padding: 20px;
     border-radius: 2px;
-    left: 5%;
+    left: 15%;
+    top:30%
 }
 
 
-.pro .material-symbols-outlined{
+.pro6 .material-symbols-outlined{
     position: relative;
     top:3px;
     margin-right: 10px;
     
 }
 
-.pro{
+.pro6{
     display:flex ;
 
     margin-left: 6px;
 }
 
-.sme{
+.smer{
     font-size: 11px;
 }
 
-.uright{
+.uright8{
     display: flex;
     justify-content: space-between;
     background: rgba(255, 247, 228, 1);
@@ -49,21 +52,21 @@ bottom:0;
     margin-top: 20px;
 
 }
-.uright p{
+.uright8 p{
     font-size: 13px;
     padding: 5px 20px 5px 20px;
 }
-.editnum{
+.editnum9{
     display: flex;
     justify-content: space-between;
 }
 
-.numbtn2,.edit0{
+.numbtn210,.edit011{
     padding: 0px 10px 0px 10px;
     border: none;
 }
 
-.numbtn2{
+.numbtn210{
     background: 
     rgba(43, 42, 41, 1)
     ;
@@ -71,12 +74,29 @@ bottom:0;
     border-radius: 3px;
     margin-right: 10px;
 }
-.tct{
+.tmt{
     position: relative;
     top:-7px
 } 
 
-.edit0{
+.edit011{
     margin-left: 10px;
     background: white;
+}
+
+.logout01{
+
+    /* position: fixed; */
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    background:
+    rgba(43, 42, 41, 1) ;
+    color: white;
+    width: 30%;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

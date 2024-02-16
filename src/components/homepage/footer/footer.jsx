@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div div className='footer-p-gap'>
           <p className='footer-p1'>Others</p>
-          <p className='footer-p2'><Link to="/privacy">Privacy Policy</Link></p>
+          <p className='footer-p2'><Link to="/privacyp">Privacy Policy</Link></p>
           <p className='footer-p2'><Link to="/terms">Terms and Conditions</Link></p>
           {/* <p className='footer-p2'><Link to="/terms">Conditions</Link></p> */}
         </div>
