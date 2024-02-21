@@ -18,10 +18,10 @@ function Cardsinhome() {
         navigate('/ViewDetails');
     };
 
-    const navigate1 = useNavigate();
-    const handleRedirect1 = () => {
-        navigate1('/Searcher');
-    };
+    // const navigate1 = useNavigate();
+    // const handleRedirect1 = () => {
+    // navigate1('/Searcher');
+    // };
 
     return (
         <>
