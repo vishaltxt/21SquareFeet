@@ -35,13 +35,6 @@ function Edit({ edited0 }) {
               <input type='text' name='' className='e3' placeholder='Enter Service you provide' />
             </div>
 
-
-
-
-
-
-
-
           </div>
 
           <label for='' className='eadd'>Address</label><br />

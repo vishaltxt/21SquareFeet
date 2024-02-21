@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import "./upcategory.css"
+
 import Send from '../Popup/Send'
 // import ViewDetails from './ViewDetails'
 
@@ -198,4 +199,4 @@ function Upcategary() {
     )
 }
 
-export default Upcategary
+export default Upcategary;

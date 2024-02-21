@@ -19,7 +19,7 @@ import Contact from './components/contact/pages/Contact.jsx'
 import AfLogged from './components/category/POPUP copy/AfLogged.jsx';
 import Supplylogin from './components/contact/pages/Supplylogin.jsx';
 import Button from './components/category/POPUP copy/Button.jsx';
-import Send from './components/category/Popup/Send.jsx';
+
 function App() {
   return (
     <div>
@@ -35,7 +35,6 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/aflogged" element={<AfLogged />} />
           <Route path="/button" element={<Button />} />
-          <Route path="/send" element={<Send />} />
 
           <Route path="/blog" element={<Blog />} />
           <Route path="/read" element={<Read />} />

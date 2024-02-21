@@ -4,7 +4,6 @@ import './contractor.css'
 function Contractor1() {
     return (
         <>
-
             <div className="contmain">
                 <div className="cont0">
                     <div className="cont1">
@@ -128,48 +127,48 @@ function Contractor1() {
                             <input type="radio" id="age09" name="age" value="30" />
                             <label for="age09">Iron</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age010" name="age" value="30" />
                             <label for="age010">Crushed stone/bajri</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age011" name="age" value="30" />
                             <label for="age011">Modular kitchen</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age012" name="age" value="30" />
                             <label for="age012">Hardware and tools</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age013" name="age" value="30" />
                             <label for="age013">Marbles and stone</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age014" name="age" value="30" />
                             <label for="age014">Gates/grills/railings</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age015" name="age" value="30" />
                             <label for="age015">Water tanks</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age016" name="age" value="30" />
                             <label for="age016">Solar pannels</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age017" name="age" value="30" />
                             <label for="age017">Air conditioning</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age018" name="age" value="30" />
                             <label for="age018">Elevator</label>
                         </div>
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age019" name="age" value="30" />
                             <label for="age019">Cctv/security system</label>
                         </div>
 
-                        <div className="duck"> 
+                        <div className="duck">
                             <input type="radio" id="age019" name="age" value="30" />
                             <label for="age019">Water purifier</label>
                         </div>
