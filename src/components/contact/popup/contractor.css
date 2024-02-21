@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Robot'; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.contmain{
+    width: 28%;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.cont1 h4,.cont2 h4{
+    margin-bottom: 10px;
+}
+
+
+.cont0{
+    display: flex;
+    justify-content: space-between;
+}
+
+#message{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.cotbtn {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.cotbtn button{
+    padding: 6px 15px 6px 15px;
+    border: none;
+    color: white;
+    background: 
+    rgba(43, 42, 41, 1);
+    border-radius: 3px;
+}
+.duck{
+    margin-bottom: 4px;
+}
+.duck label{
+    margin-left: 10px;
+}
+
+
+
+@media (min-width:360px) and (max-width:768px){
+    .contmain{
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
+        /* height: 50vh; */
+    }
+
+    #message{
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+
+
+
+}
+
+
+    @media (min-width:200px) and (max-width:358px){
+
+        .contmain{
+            width: 100%;
+            font-size: 12px;
+            padding: 10px;
+            /* height: 50vh; */
+        }
+    
+        #message{
+            width: 100%;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        .cont0{
+            display: flex;
+            /* justify-content: space-between; */
+            flex-direction: column;
+        }
+
+        .cont2{
+            margin-top: 15px;
+        }
+    }
+

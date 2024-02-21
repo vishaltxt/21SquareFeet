@@ -18,10 +18,10 @@ const Banner = () => {
                         <p className='banner-p-3'>Build with Confidence Using Our High-Quality Cement Materials.</p>
                         <button className='banner-bttn'>Connect Now</button>
                     </div>
-                    <div>
-                        {/* <img className='rectangle-1' src={rectangle1} alt=''></img> */}
-                        {/* <img className='rectangle-2' src={rectangle2} alt=''></img> */}
-                    </div>
+                    {/* <div> */}
+                    {/* <img className='rectangle-1' src={rectangle1} alt=''></img> */}
+                    {/* <img className='rectangle-2' src={rectangle2} alt=''></img> */}
+                    {/* </div> */}
                 </div>
                 <div className='lower-container'>
                     <div className='lw-2'>

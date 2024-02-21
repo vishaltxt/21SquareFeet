@@ -1,6 +1,7 @@
 import React from 'react'
 import './viewdetails.css'
 import Navbar from '../../homepage/Navbar/navbar'
+import Footer from '../../homepage/footer/footer'
 
 function ViewDetails() {
     return (
@@ -65,9 +66,9 @@ function ViewDetails() {
                     <div className="vphotos">
                         <h3>Photos</h3>
                         <div className="photo5">
-                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
-                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
-                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
+                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
+                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
+                            <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                             {/* <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
                        <img className='img1dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' /> */}
 
@@ -83,7 +84,7 @@ function ViewDetails() {
 
 
 
-
+            <Footer />
         </>
     )
 }

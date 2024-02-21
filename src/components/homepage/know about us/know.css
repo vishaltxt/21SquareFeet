@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 .know{
+    /* width: 100%; */
     margin-top: 8%;
-    margin-left: 72%;
+    margin-left: 73%;
+    margin-bottom: 10px;
 }
 .know-p1{
     color: rgba(254, 198, 63, 1);
@@ -21,49 +23,50 @@
 }
 .know-mid{
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding-top: 1%;
-    gap: 30%;
+    width: 100%;
+    /* margin:auto; */
+    /* gap: 14%; */
+    padding-bottom: 30px;
+}
+.know-mid-div-1{
+    width: 50%;
+    /* margin-left: 10%; */
+}
+.know-mid-resp{
+    width: 50%;
+    margin-right: 10%;
 }
 .know-about{
-    position:absolute;
-    left: 10%;
-    width: 270px;
-    height: 320px;
+    margin-left: 16%;
+    width: 370px;
+    height: 430px;
 }
 .know-circle{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 285%;
-    left: 16%;
+    top: 305%;
+    left: 17%;
 }
 .know-about2{
     position: relative;
     top: 63%;
     left: 65%;
     width: 250px;
-    height: 140px;
+    height: 150px;
 }
 .blur{
     position: absolute;
     width: 50px;
     height: 200px;
-    left: 28.5%;
-    top: 260%;
-}
-.know-foot{
-    background-color: rgba(254, 198, 63, 1);
-    margin-top: 6%;
-    height: 40px;
-    width: 100%;
+    left: 30.5%;
+    top: 275%;
 }
 .know-paras{
     color:  rgba(43, 42, 41, 1);
     font: 'Roboto';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
 }
 .know-mid-p{
     color: rgba(24, 25, 28, 1);
@@ -97,16 +100,19 @@
     .know-mid{
         display: flex;
         flex-direction: column;
-        width: 86%;
+        width: 100%;
     }
     .know-mid-resp{
-        margin-top: 35%;
+        width: 100%;
+        margin-top: 50%;
+        justify-content: center;
+        text-align: center;
         /* margin-left: -5%; */
     }
     .know-about{
         position:absolute;
         left: 13%;
-        width: 120px;
+        width: 150px;
         height: 130px;
     }
     .know-circle{
@@ -134,7 +140,7 @@
         width: 100%;
     }
     .know-paras{
-        /* width: 100%; */
+        width: 100%;
         text-align: start;
         font-size: 12px;
     }
@@ -152,17 +158,19 @@
         height: 17px;
     }
 }
-@media (min-width:320px) and (max-width: 480px) {
+@media (min-width:320px) and (max-width: 412px) {
     .know{
-        width: 50%;
+        width: 55%;
         margin-top: 1%;
+        /* justify-content: center; */
+        /* text-align: center; */
         margin-left: 22%;
     }
     .know-p1{
-        font-size: 8px;
+        font-size: 9px;
     }
     .know-p2{
-        font-size: 20px;
+        font-size: 22px;
     }
     .know-mid{
         display: flex;
@@ -170,42 +178,19 @@
         width: 86%;
     }
     .know-mid-resp{
-        margin-top: 22%;
-        /* margin-left: -5%; */
+        width: 100%;
+        margin-top: 51%;
+        margin-left: 7%;
     }
     .know-about{
         position:absolute;
         left: 13%;
-        width: 150px;
+        width: 160px;
         height: 160px;
     }
-    .know-circle{
-        position: relative;
-        left: 40%;
-        width: 60px;
-        height: 60px;
-        /* top: 285%; */
-    }
-    .know-about2{
-        position: relative;
-        top: 1%;
-        left: 19%;
-        width: 130px;
-        height: 90px;
-    }
-    .blur{
-        position: absolute;
-        width: 30px;
-        height: 100px;
-    }
-    .know-foot{
-        margin-top: 6%;
-        height: 40px;
-        width: 85%;
-    }
     .know-paras{
-        width: 80%;
-        text-align: start;
+        /* width: 88%; */
+        /* text-align: start; */
         font-size: 12px;
     }
     .know-mid-p{

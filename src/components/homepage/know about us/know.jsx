@@ -1,10 +1,10 @@
 import React from 'react'
 import './know.css'
-import about from './know image/about-1.jpg.png'
-import about2 from './know image/div.layer-inner (1).png'
-import circle from './know image/div.layer-inner.png'
+import together from './know image/Group 3together.png'
+// import about2 from './know image/div.layer-inner (1).png'
+// import circle from './know image/div.layer-inner.png'
 import parrow from './know image/Link.png'
-import blur from './know image/div.layer-image-inner-wrapper.png'
+// import blur from './know image/div.layer-image-inner-wrapper.png'
 
 const Know = () => {
     return (
@@ -15,11 +15,11 @@ const Know = () => {
                     <p className='know-p2'>Know About Us</p>
                 </div>
                 <div className='know-mid'>
-                    <div>
-                        <img className='know-about' src={about} alt=''></img>
-                        <img className='know-circle' src={circle} alt=''></img>
-                        <img className='know-about2' src={about2} alt=''></img>
-                        <img className='blur' src={blur} alt=''></img>
+                    <div className='know-mid-div-1'>
+                        <img className='know-about' src={together} alt=''></img>
+                        {/* <img className='know-circle' src={circle} alt=''></img> */}
+                        {/* <img className='know-about2' src={about2} alt=''></img> */}
+                        {/* <img className='blur' src={blur} alt=''></img> */}
                     </div>
                     <div className='know-mid-resp'>
                         <p className='know-paras'>Welcome to 21SQFT.com , an online platform for finding and hiring the best contractors and material vendors for your construction projects. Whether you are building a new house, a new office, or a new commercial complex, we can help you connect with the most qualified or experienced contractors/vendors in your area.21SQFT.com is more than just a directory of contractors, it is a complete solution that helps you plan, manage, and execute your construction project from start to finish.</p>
@@ -38,7 +38,7 @@ const Know = () => {
                         </div>
                     </div>
                 </div>
-                <div className='know-foot'></div>
+                {/* <div className='know-foot'></div> */}
             </section>
         </div>
     )

@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     background-color: black;
     padding: 25px 0px;
+    width: 100%;
 }
 .footer-midd-flex{
     display: flex;
@@ -49,7 +50,7 @@
     font-size: 12px;
     text-align: center;
     padding: 8px;
-    width: 160px;
+    width: 200px;
     border: 1px solid rgba(241, 238, 246, 0.5);
     background-color: rgba(255, 255, 255, 1);
 }
@@ -60,9 +61,12 @@
     font-size: 12px;
     text-align: center;
     padding: 8px;
-    width: 160px;
+    width: 200px;
     border: 1px solid rgba(254, 198, 63, 1);
     background-color: rgba(254, 198, 63, 1);
+}
+.footer-link-color{
+    color: rgba(144, 144, 144, 1);
 }
 @media only screen and  (max-width: 320px) {
     .footer-squarefeet{
@@ -71,10 +75,26 @@
     }
     .footer{
         background-image: url('footer images/footer-background.png');
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+        'firstdiv firstdiv'
+        'twodiv threediv'
+        'fourdiv fourdiv';
+        /* flex-direction: column; */
         width: 100%;
         text-align: center;
+    }
+    #first-div{
+        grid-area: firstdiv;
+    }
+    #two-div{
+        grid-area: twodiv;
+    }
+    #three-div{
+        grid-area: threediv;
+    }
+    #four-div{
+        grid-area: fourdiv;
     }
     .footer-p-gap p{
         padding: 3px;
@@ -112,10 +132,25 @@
     }
     .footer{
         background-image: url('footer images/footer-background.png');
-        display: flex;
-        flex-direction: column;
-        width: 85%;
+        display: grid;
+        grid-template-areas:
+        'firstdiv firstdiv'
+        'twodiv threediv'
+        'fourdiv fourdiv';
+        width: 100%;
         text-align: center;
+    }
+    #first-div{
+        grid-area: firstdiv;
+    }
+    #two-div{
+        grid-area: twodiv;
+    }
+    #three-div{
+        grid-area: threediv;
+    }
+    #four-div{
+        grid-area: fourdiv;
     }
     .footer-p-gap p{
         padding: 3px;
@@ -150,6 +185,7 @@
     .footer{
         background-image: url('footer images/footer-background.png');
         display: flex;
+        width: 100%;
         justify-content: space-evenly;
         background-color: black;
         padding: 25px 0px;

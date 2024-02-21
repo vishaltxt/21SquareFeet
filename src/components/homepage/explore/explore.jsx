@@ -69,79 +69,79 @@ const Explore = () => {
                 {activeTab === 'contractor' && (
                     <div>
                         <div className='explore-grid'>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width ew-three' src={image1} alt=''></img>
                                 <p className='explore-pp'>Construction Contractors</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image2} alt=''></img>
                                 <p className='explore-pp'>Paint Contractors</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image3} alt=''></img>
                                 <p className='explore-pp'>Pop Contractors</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image4} alt=''></img>
                                 <p className='explore-pp'>Carpenter</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image5} alt=''></img>
                                 <p className='explore-pp'>Shuttering</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image6} alt=''></img>
                                 <p className='explore-pp'>Plumbing Contractors</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image7} alt=''></img>
                                 <p className='explore-pp'>Interior Designers</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width ew-three' src={image8} alt=''></img>
                                 <p className='explore-pp'>Waterproofing</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image9} alt=''></img>
                                 <p className='explore-pp'>Heat Insulation</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image10} alt=''></img>
                                 <p className='explore-pp'>False Ceiling</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image11} alt=''></img>
                                 <p className='explore-pp'>Upvc Fittings</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image12} alt=''></img>
                                 <p className='explore-pp'>Flooring</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image13} alt=''></img>
                                 <p className='explore-pp'>Electric Contractors</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image14} alt=''></img>
                                 <p className='explore-pp'>Jcb Movers</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width ew-three' src={image15} alt=''></img>
                                 <p className='explore-pp'>Aluminum Fittings</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image16} alt=''></img>
                                 <p className='explore-pp'>Glass</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image17} alt=''></img>
                                 <p className='explore-pp'>Fire system</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image18} alt=''></img>
                                 <p className='explore-pp'>Landscapers</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image19} alt=''></img>
                                 <p className='explore-pp'>Architects</p>
                             </div>
@@ -151,83 +151,83 @@ const Explore = () => {
                 {activeTab === 'supplier' && (
                     <div>
                         <div className='explore-grid'>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image01} alt=''></img>
                                 <p className='explore-pp'>Sanitary/bath Fittings</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image02} alt=''></img>
                                 <p className='explore-pp'>Electrical/ lightings</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image03} alt=''></img>
                                 <p className='explore-pp'>Tiles/flooring</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image04} alt=''></img>
                                 <p className='explore-pp'>Pains and surface care</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image05} alt=''></img>
                                 <p className='explore-pp'>Wood work</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image06} alt=''></img>
                                 <p className='explore-pp'>Wallpaper/pvc/vinee</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image07} alt=''></img>
                                 <p className='explore-pp'>Marbles and stone</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image08} alt=''></img>
                                 <p className='explore-pp'>Bricks/ sand</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image09} alt=''></img>
                                 <p className='explore-pp'>Modular kitchen</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image010} alt=''></img>
                                 <p className='explore-pp'>Cement</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image011} alt=''></img>
                                 <p className='explore-pp'>Iron</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image012} alt=''></img>
                                 <p className='explore-pp'>Crushed stone/bajri</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image013} alt=''></img>
                                 <p className='explore-pp'>Hardware and tools</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image014} alt=''></img>
                                 <p className='explore-pp'>Water purifier</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image015} alt=''></img>
                                 <p className='explore-pp'>Gates/grills/railings</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image016} alt=''></img>
                                 <p className='explore-pp'>Water tanks</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image017} alt=''></img>
                                 <p className='explore-pp'>Solar pannels</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image018} alt=''></img>
                                 <p className='explore-pp'>Air conditioning</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image019} alt=''></img>
                                 <p className='explore-pp'>Elevator</p>
                             </div>
-                            <div>
+                            <div className='explore-grid-width'>
                                 <img className='explore-width' src={image020} alt=''></img>
                                 <p className='explore-pp'>Cctv/security system</p>
                             </div>

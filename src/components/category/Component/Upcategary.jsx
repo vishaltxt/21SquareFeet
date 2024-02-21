@@ -81,7 +81,7 @@ function Upcategary() {
                         <div className="cont10">
                             <div className="photo">
 
-                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
+                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                             </div>
 
                             <div className="right">
@@ -135,7 +135,7 @@ function Upcategary() {
                         <div className="cont10">
                             <div className="photo">
 
-                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
+                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                             </div>
 
                             <div className="right">
@@ -192,7 +192,7 @@ function Upcategary() {
                         <div className="cont10">
                             <div className="photo">
 
-                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
+                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                             </div>
 
                             <div className="right">
@@ -245,7 +245,7 @@ function Upcategary() {
                         <div className="cont10">
                             <div className="photo">
 
-                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' />
+                                <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                             </div>
 
                             <div className="right">

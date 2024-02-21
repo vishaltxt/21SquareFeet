@@ -4,7 +4,6 @@ import './contactform.css'
 const Contactform = () => {
     return (
         <div>
-
             <div className='contactform-main'>
                 <p className='cf-p1'>Get in touch with us</p>
                 <div className='contactform-inner'>
