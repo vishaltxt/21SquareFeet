@@ -3,7 +3,6 @@ import './navbar.css'
 import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import squarefeet from './navbar images/21SQFT B 1.png'
-// import circle from './navbar images/Ellipse 1.png'
 import profile from './navbar images/Frame 6.png'
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -23,8 +22,8 @@ const Navbar = () => {
     }, []);
 
     // const [barclose, setBarClose] = useState('')
-    // const [searchText, setSearchText] = useState('');
-    // const [filteredKeywords, setFilteredKeywords] = useState([]);
+    const [searchText, setSearchText] = useState('');
+    const [filteredKeywords, setFilteredKeywords] = useState([]);
     // const closeSideBar = () => {
     // setBarClose('false')
     // }
@@ -38,30 +37,44 @@ const Navbar = () => {
     };
 
     // function PopSearch() {
-    // const availableKeywords = [
-    // 'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Node.js',
-    // 'Where to learn coding online', 'where to learn web design', 'How to create a website', 'Noida', 'Gaziabad', 'New Delhi'
-    // ];
+    const availableKeywords = [
+        'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Node.js',
+        'Where to learn coding online', 'where to learn web design', 'How to create a website', 'Noida', 'Gaziabad', 'New Delhi'
+    ];
 
     // const [filteredKeywords, setFilteredKeywords] = useState([]);
-    // const handleInputChange = (event) => {
-    // const input = event.target.value.toLowerCase();
-    // const filtered = availableKeywords.filter(keyword =>
-    // keyword.toLowerCase().includes(input)
-    // );
-    // setFilteredKeywords(filtered);
-    // setSearchText(input);
-    // };
-    // const handleKeywordClick = (keyword) => {
-    // setSearchText(keyword);
-    // setFilteredKeywords([]);
-    // };
+    const handleInputChange = (event) => {
+        const input = event.target.value.toLowerCase();
+        const filtered = availableKeywords.filter(keyword =>
+            keyword.toLowerCase().includes(input)
+        );
+        setFilteredKeywords(filtered);
+        setSearchText(input);
+    };
+    const handleKeywordClick = (keyword) => {
+        setSearchText(keyword);
+        setFilteredKeywords([]);
+    };
 
     return (
         <div>
             <div className={`navbar h-nav-resp ${showMenu ? 'show-menu' : ''}`} ref={menuRef}>
                 <div className='div-1'>
                     <Link className='navbar-link-color' to='/'><img className='squarefeet' src={squarefeet} alt=""></img></Link>
+                </div>
+                <div className="search-box">
+                    <div className="row">
+                        <input className='search-nav-search' type="text" id="input-box" value={searchText} onChange={handleInputChange}
+                            placeholder="Search Keywords" autocomplete="off" />
+                        <button><i className="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div className="result-box">
+                        <ul>
+                            {filteredKeywords.map((keyword, index) => (
+                                <li key={index} onClick={() => handleKeywordClick(keyword)}>{keyword}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
                 <div className='div-2'>
                     <div className='sidebar-slide'>
@@ -72,24 +85,10 @@ const Navbar = () => {
                             <li><Link className='navbar-link-color' to="/contact" onClick={closeMenu}>Contact Us</Link></li>
                         </ul>
                     </div>
-                    {/* <img className='circle' src={circle} alt=''></img> */}
                     {/* <input className='navbar-search' type='text' placeholder='search here'></input> */}
-                    {/* <div className="search-box"> */}
-                    {/* <div className="row"> */}
-                    {/* <input className='search-nav-search' type="text" id="input-box" value={searchText} onChange={handleInputChange} placeholder="Search Keywords" autocomplete="off" /> */}
-                    {/* <button><i className="fa-solid fa-magnifying-glass"></i></button> */}
-                    {/* </div> */}
-                    {/* <div className="result-box"> */}
-                    {/* <ul> */}
-                    {/* {filteredKeywords.map((keyword, index) => ( */}
-                    {/* <li key={index} onClick={() => handleKeywordClick(keyword)}>{keyword}</li> */}
-                    {/* ))} */}
-                    {/* </ul> */}
-                    {/* </div> */}
-                    {/* </div> */}
 
                     <button className='nav-btn'><Link className='navbar-link-color-register' to="/login">Register</Link></button>
-                    <Link className='footer-link-color' to="/button"><img className='navbar-profile' src={profile} alt=''></img></Link>
+                    <Link className='footer-link-color' to="/profilesupplier"><img className='navbar-profile' src={profile} alt=''></img></Link>
                 </div>
                 <div className={`burger ${isBurgerOpen ? 'open' : ''}`} onClick={toggleMenu}>
                     <div className="line"></div>

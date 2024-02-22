@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './cardsinhome.css'
 // import "./upcategory.css"
-import Send from '../../category/Popup/Send'
+import Send from '../../categorypage/Popup/Send'
 // import ViewDetails from './ViewDetails'
 import { useNavigate } from 'react-router-dom'
 

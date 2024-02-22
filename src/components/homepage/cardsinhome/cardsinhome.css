@@ -37,10 +37,13 @@
       }
 }
 @media (max-width: 457px) {
+    .cardsinhome-main{
+        margin-bottom: 25px;
+    }
     .doubleCard-inhome{
         display: flex;
         gap: 0px;
-        margin: 0px 10px 0px 0px;
+        margin: 0px 10px 5px 0px;
         flex-direction: column;
       }
 }
