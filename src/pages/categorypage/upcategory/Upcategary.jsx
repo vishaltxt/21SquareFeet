@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import "./upcategory.css"
 
-import Send from '../Popup/Send'
+import Send from '../../../pages/categorypage/Popup/Send'
 // import ViewDetails from './ViewDetails'
 
 

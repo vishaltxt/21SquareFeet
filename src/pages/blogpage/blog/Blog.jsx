@@ -1,8 +1,8 @@
 import React from 'react'
 import './blog.css'
 import { Link } from 'react-router-dom'
-import Navbar from '../../homepage/Navbar/navbar'
-import Footer from '../../homepage/footer/footer'
+import Navbar from '../../../components/homepage/Navbar/navbar'
+import Footer from '../../../components/homepage/footer/footer'
 
 function Blog() {
     return (
