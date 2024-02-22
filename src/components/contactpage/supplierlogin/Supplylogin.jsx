@@ -19,8 +19,8 @@ function Supplylogin() {
             <div className='wel-supplyl4'>Welcome!</div>
             <div className='div-supplyl4'>
 
-              <div  className='user1l4'>User</div>
-              <div  className='supply1l4'>Contractor/Supplier</div>
+              <div className='user1l4'>User</div>
+              <div className='supply1l4'>Contractor/Supplier</div>
             </div>
             <div className='info-supplyl4'>
               <div className='user-logl4'>
@@ -37,23 +37,15 @@ function Supplylogin() {
               {/* <Link to='/'>
                 <button type='submit'>Registration</button>
               </Link> */}
-
-
-               <div >
+              <div >
                 <button type='submit'>Registration</button>
               </div>
               <div className='dosulppyl4'> Don't have an account.
                 <Link to='/Supplier' className='dkrl4'>Register</Link>
 
                 {/* <div  className='dkrl4'>Register</div> */}
-                </div>
-
-
+              </div>
             </div>
-
-
-
-
           </div>
         </form>
       </div>

@@ -2,17 +2,23 @@
   margin: 0;
   padding: 0;
   /* background: gainsboro; */
+  box-sizing: border-box;
 }
 
 .main {
+  width: 100%;
 }
+
 
 .imgc {
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .imghead {
   width: 100%;
+  box-sizing: border-box;
 
   height: 250px;
 
@@ -90,6 +96,8 @@
   justify-content: center;
   position: relative;
   top: -30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .img10 {
@@ -144,6 +152,7 @@
 .cont10 {
   display: flex;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .right .t30{
@@ -236,6 +245,8 @@
   display: flex;
   margin-top: 10px;
   justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /*.img1 {
@@ -317,8 +328,60 @@
 @media (min-width: 300px) and (max-width: 768px) {
   .construction {
     width: 100%;
-    margin: 5px 20px 0px 10px;
+    /* margin: 5px 20px 0px 10px; */
+    margin: 0px;
     padding: 0px;
+  }
+
+  .main {
+    width: 100%;
+    padding: 5px;
+  }
+  .btn2 {
+    background: rgba(254, 204, 0, 1);
+    padding: 4px 40px 18px 40px;
+    border: none;
+    text-align: center;
+    margin-left: 0px;
+    border-radius: 5px;
+  }
+
+
+  .btn1,
+  .btn01 {
+    background: rgba(255, 255, 255, 1);
+    border: none;
+  
+    margin-left: 0px;
+    border-radius: 5px;
+  
+    box-shadow: 3px 5px 19px rgba(254, 204, 0, 0.1);
+  }
+
+  .btn01 {
+    padding: 16px 20px 18px 12px;
+    width: 100%;
+  }
+  .imghead {
+    width: 100%;
+  
+    height: 250px;
+  
+    filter: brightness(0.5);
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .imgc {
+    position: relative;
+    width: 100%;
+  }
+
+  .bannert {
+    position: absolute;
+    top: 13%;
+    left: 22%;
+    padding: 10px;
   }
 
   .doubleCard {
@@ -339,6 +402,11 @@
   
     
   }
+  .cont10{
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
 
   .onimage {
     display: flex;
@@ -348,6 +416,28 @@
   .btn2 {
     margin-top: 10px;
   }
+
+  .construction {
+    border: 1px solid rgba(211, 211, 211, 1);
+    /* display: flex; */
+    font-family: "Poppins", sans-serif;
+  
+    /* flex: 1; */
+  
+    /* display: flex; */
+    margin-right: 0px;
+    width: 100%;
+    border-radius: 9px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    height: 20%;
+  }
+
+
+
+
+
+
 }
 
 @media (max-width: 299px) {

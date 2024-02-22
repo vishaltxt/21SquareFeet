@@ -18,7 +18,7 @@ import Read1 from './components/blogpage/read1/Read1.jsx'
 import Contact from './components/contactpage/contact/Contact.jsx'
 import AfLogged from './components/categorypage/POPUP copy/AfLogged.jsx';
 import Supplylogin from './components/contactpage/supplierlogin/Supplylogin.jsx';
-import ProfileSupplier from './components/categorypage/Profile/profileSupplier.jsx';
+import ProfileSupplier from './components/categorypage/userSupplier/profileSupplier.jsx';
 // import Button from './components/category/POPUP copy/Button.jsx';
 
 function App() {

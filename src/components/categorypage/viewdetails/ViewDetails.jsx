@@ -1,12 +1,12 @@
 import React from 'react'
 import './viewdetails.css'
-import Navbar from '../../homepage/Navbar/navbar'
-import Footer from '../../homepage/footer/footer'
+// import Navbar from '../../homepage/Navbar/navbar'
+// import Footer from '../../homepage/footer/footer'
 
 function ViewDetails() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="vmaindv">
                 <div className="constructiondv">
 
@@ -84,7 +84,7 @@ function ViewDetails() {
 
 
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
