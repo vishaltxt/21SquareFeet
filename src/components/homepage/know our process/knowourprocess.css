@@ -248,7 +248,7 @@
         top: 68.4%;
     }
 }
-@media (min-width:320px) and (max-width:412px){
+@media (min-width:321px) and (max-width:412px){
     .first-section{
         height: 28vh;
     }
@@ -353,12 +353,12 @@
         top: 70%;
     }
 }
-@media (min-width:480px) and (max-width:576px){
+@media (min-width:413px) and (max-width:576px){
     .first-section{
         height: 34vh;
     }
     .knowprocess-background-container {
-        background-image: url('./knowourprocess images/div.elementor-background-overlay.png');
+        background-image: url('./knowourprocess images/Group\ together.png');
         position: absolute;
         background-size: cover;
         width: 100%;
@@ -457,12 +457,12 @@
         top: 38.6%;
     }   
 }
-@media (min-width:576px) and (max-width:768px){
+@media (min-width:577px) and (max-width:768px){
     .first-section{
-        height: 48vh;
+        height: 43vh;
     }
     .knowprocess-background-container {
-        background-image: url('./knowourprocess images/div.elementor-background-overlay.png');
+        background-image: url('./knowourprocess images/Group\ together.png');
         position: absolute;
         background-size: cover;
         width: 122%;
@@ -471,7 +471,11 @@
         margin-left: 7%;
     }
     .knowprocess-p1{
+        font-size: 20px;
         margin-top: -10%;
+    }
+    .knowprocess-p2{
+        font-size: 20px;
     }
     .knowprocess-img{
         position: absolute;

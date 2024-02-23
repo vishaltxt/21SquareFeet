@@ -329,14 +329,14 @@
         display: flex;
         position: absolute;
         top: 95%;
-        left: 11%;
+        left: 13%;
         background-color: rgba(255, 255, 255, 1);
-        width: 75%;
+        width: 70%;
         border: 2px solid rgba(255, 255, 255, 1);
         box-shadow:1px 2px rgba(236, 236, 236, 1);
         border-radius: 36px;
         gap: 10%;
-        padding: 5px;
+        padding: 12px;
     }
     .lw-2{
         margin-top: 7px;
@@ -347,10 +347,10 @@
         color: rgba(43, 42, 41, 1);
         font: 'Roboto';
         font-weight: 400;
-        font-size: 8px;
+        font-size: 14px;
     }
     .ex-noida{
-        font-size: 8px;
+        font-size: 14px;
     }
     .banner-services{
         /* align-items: center; */
@@ -363,12 +363,16 @@
         height: 20px;
     }   
 }
-@media (min-width: 577px) and (max-width: 886px){
+@media (min-width: 577px) and (max-width: 810px){
     .background-container{
         width: 100%;
     }
+    .lower-container{
+        width: 60%;
+        gap: 6%;
+    }
 }
-@media (min-width: 810px) and (max-width: 886px){
+@media (min-width: 811px) and (max-width: 886px){
     .lower-container{
         width: 60%;
         

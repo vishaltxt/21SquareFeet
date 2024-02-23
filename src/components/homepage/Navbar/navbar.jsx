@@ -96,6 +96,7 @@ const Navbar = () => {
                     <div className="line"></div>
                 </div>
             </div>
+
         </div>
     )
 }

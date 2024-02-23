@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './profilesupplier.css'
 import EditSupplier from './EditprofileSupplier'
+import Navbar from '../../../components/homepage/Navbar/navbar'
+import Footer from '../../../components/homepage/footer/footer'
 
 function ProfileSupplier() {
     const [changed, setChanged] = useState(false)
@@ -9,6 +11,7 @@ function ProfileSupplier() {
 
     return (
         <>
+            <Navbar />
             <div className="supwrap"></div>
             <div className="vmaindv">
                 <div className="constructiondv">
@@ -57,6 +60,7 @@ function ProfileSupplier() {
                         <button type='submit' className='btnedit'>Logout</button></div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
