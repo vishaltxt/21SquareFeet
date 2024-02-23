@@ -6,7 +6,7 @@
 .wrapperdd {
   position: fixed;
   background-color: gray;
-z-index: 99;
+z-index: 109;
   top: 0;
   left: 0;
   right: 0;
@@ -21,7 +21,7 @@ z-index: 99;
   padding: 12px;
   border-radius: 2px;
   left: 30%;
-  z-index: 100;
+  z-index: 200;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
 
   font-size: 62.25%;
