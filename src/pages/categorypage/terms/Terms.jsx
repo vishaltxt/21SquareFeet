@@ -1,7 +1,7 @@
 import React from 'react'
 import './terms.css'
-import Navbar from '../../homepage/Navbar/navbar'
-import Footer from '../../homepage/footer/footer'
+import Navbar from '../../../components/homepage/Navbar/navbar'
+import Footer from '../../../components/homepage/footer/footer'
 
 function Terms() {
   return (

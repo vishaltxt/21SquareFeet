@@ -26,13 +26,7 @@
     font-weight: 700;
     font-size: 42px;
 }
-.banner-layer{
-    position: absolute;
-    top: 42.8%;
-    left: 23.8%;
-    width: 250px;
-    height:93px ;
-}
+
 .banner-p-2{
     color: rgba(254, 204, 0, 1);
     font: 'Roboto';
@@ -57,20 +51,6 @@
     box-shadow: 2px 2px grey;
     margin-top: 14%;
     margin-bottom: 26%;
-}
-.rectangle-1{
-    position: absolute;
-    top: 19%;
-    right: 31%;
-    width: 145px;
-    height: 160px;
-}
-.rectangle-2{
-    position: absolute;
-    width: 220px;
-    height: 240px;
-    top: 40%;
-    right:22% ;
 }
 .lower-container{
     display: flex;
@@ -222,7 +202,7 @@
         height: 20px;
     }   
 }
-@media (min-width: 320px) and (max-width: 412px){
+@media (min-width: 321px) and (max-width: 412px){
     .background-container {
         background-image: url('./banner images/mobile view.png');
         /* background-image: url('./banner images/cement 1.png'); */
@@ -267,20 +247,6 @@
         box-shadow: 2px 2px grey;
         margin-top: 12%;
         margin-bottom: 20%;
-    }
-    .rectangle-1{
-        position: absolute;
-        top: 13%;
-        right: 16%;
-        width: 45px;
-        height: 50px;
-    }
-    .rectangle-2{
-        position: absolute;
-        width: 50px;
-        height: 60px;
-        top: 33%;
-        right:7% ;
     }
     .lower-container{
         display: flex;
@@ -328,8 +294,8 @@
         background-size: cover;
         width: 100%;
         /* height: 100%; */
-        height: 100%;
-        box-sizing: border-box;
+        /* height: 100%; */
+        /* box-sizing: border-box; */
     }
     #banner{
         display: flex;
@@ -342,13 +308,6 @@
     }
     .banner-p-1{
         font-size: 25px;
-    }
-    .banner-layer{
-        position: absolute;
-        top: 20%;
-        left: 23%;
-        width: 90px;
-        height:35px ;
     }
     .banner-p-2{
         font-size: 30px;
@@ -365,20 +324,6 @@
         box-shadow: 2px 2px grey;
         margin-top: 12%;
         margin-bottom: 20%;
-    }
-    .rectangle-1{
-        position: absolute;
-        top: 13%;
-        right: 16%;
-        width: 45px;
-        height: 50px;
-    }
-    .rectangle-2{
-        position: absolute;
-        width: 50px;
-        height: 60px;
-        top: 33%;
-        right:7% ;
     }
     .lower-container{
         display: flex;

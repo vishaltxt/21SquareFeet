@@ -2,8 +2,8 @@ import React from 'react'
 import './contact.css'
 import { IoMdCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
-import Navbar from '../../homepage/Navbar/navbar';
-import Footer from '../../homepage/footer/footer';
+import Navbar from '../../../components/homepage/Navbar/navbar';
+import Footer from '../../../components/homepage/footer/footer';
 
 function Contact() {
     return (
