@@ -356,12 +356,13 @@
 @media (min-width:413px) and (max-width:576px){
     .first-section{
         height: 34vh;
+        /* width: 100%; */
     }
     .knowprocess-background-container {
         background-image: url('./knowourprocess images/Group\ together.png');
         position: absolute;
         background-size: cover;
-        width: 100%;
+        width: 110%;
     }
     #knowprocess{
         display: flex;
@@ -397,7 +398,7 @@
         position: relative;
         background-size: cover;
         opacity: 100%;
-        width: 100%;
+        width: 110%;
     }
     .knowprocess-lower{
         display: flex;
@@ -465,7 +466,7 @@
         background-image: url('./knowourprocess images/Group\ together.png');
         position: absolute;
         background-size: cover;
-        width: 122%;
+        width: 102%;
     }
     .knowprocess-div1{
         margin-left: 7%;
@@ -485,7 +486,7 @@
         top: 55%;
     }
     .second-section{
-        width: 122%;
+        width: 102%;
         padding-bottom: 7%;
     }
     .knowprocess-lower{

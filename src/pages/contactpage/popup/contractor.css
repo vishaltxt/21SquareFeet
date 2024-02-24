@@ -6,18 +6,41 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.contmain{
-    width: 28%;
-    font-size: 12px;
-    padding: 10px;
+.roper{
+    position: fixed;
+    background:grey;
+
+top:0;
+left:0;
+right:0;
+bottom:0;
 }
 
-.cont1 h4,.cont2 h4{
+.contmainA{
+    position: fixed;
+    width: 40%;
+    /* width: 40%; */
+    font-size: 12px;
+    padding: 10px;
+    background: white;
+
+    top: 4px;
+    left: 55%;
+    height: auto;
+}
+
+.cont1A h4,.cont2A h4{
     margin-bottom: 10px;
 }
 
+/* .cont1,.cont2{
+    position: fixed;
 
-.cont0{
+} */
+
+
+.cont0A{
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
 }
@@ -29,13 +52,18 @@
     margin-bottom: 15px;
 }
 
-.cotbtn {
+.cotbtnA {
+    /* position: fixed; */
     display: flex;
     justify-content: center;
    
 }
+.cont13{
+    /* position: fixed; */
 
-.cotbtn button{
+}
+
+.cotbtnA button{
     padding: 6px 15px 6px 15px;
     border: none;
     color: white;
@@ -43,21 +71,25 @@
     rgba(43, 42, 41, 1);
     border-radius: 3px;
 }
-.duck{
-    margin-bottom: 4px;
+.duckED{
+    margin-bottom:4px;
 }
-.duck label{
+.duckED label{
     margin-left: 10px;
 }
 
 
 
 @media (min-width:360px) and (max-width:768px){
-    .contmain{
+    .contmainA{
         width: 100%;
         font-size: 12px;
-        padding: 10px;
+        /* padding: 10px; */
         /* height: 50vh; */
+        top: 4px;
+        left: 0%;
+        height: auto;
+        padding: 5px;
     }
 
     #message{
@@ -67,6 +99,16 @@
         margin-bottom: 15px;
         margin-top: 10px;
     }
+    /* .contmainA{
+        position: fixed;
+        width: 100%;
+        /* width: 40%; */
+        /* font-size: 12px;
+        padding: 10px;
+        background: white; *
+    
+       
+    } */
     
 
 
@@ -76,7 +118,7 @@
 
     @media (min-width:200px) and (max-width:358px){
 
-        .contmain{
+        .contmainA{
             width: 100%;
             font-size: 12px;
             padding: 10px;
@@ -90,13 +132,13 @@
             margin-bottom: 15px;
             margin-top: 10px;
         }
-        .cont0{
+        .cont0A{
             display: flex;
             /* justify-content: space-between; */
             flex-direction: column;
         }
 
-        .cont2{
+        .cont2A{
             margin-top: 15px;
         }
     }
