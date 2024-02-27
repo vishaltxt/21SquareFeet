@@ -1,16 +1,37 @@
 import React, { useState } from 'react'
-
 import "./upcategory.css"
-
 import Send from '../../../pages/categorypage/Popup/Send'
 // import ViewDetails from './ViewDetails'
-
-
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
+import axios from 'axios'
+
 
 function Upcategary() {
+    const [like, setLike] = useState('');
+    // const[fetch,setFetch]=useState('')
+    axios.get('http://localhost:8000/api/auth/fetch-contractor', {})
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.error('Error updating data:', error);
+        });
+
+    axios.get('http://localhost:8000/api/auth/search', {})
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.error('Error updating data:', error);
+        });
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8000/api/auth/like', { like })
+    }
+
+
     const [payment, setPayment] = useState(false)
 
     const band = () => setPayment(false)
@@ -88,7 +109,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
                                     {payment && <Send band={band} />}
                                 </div>
                             </div>
@@ -121,7 +142,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -154,7 +175,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -185,7 +206,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} ></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>

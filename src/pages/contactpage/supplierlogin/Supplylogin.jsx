@@ -18,7 +18,6 @@ function Supplylogin() {
           <div className="bwell4">
             <div className='wel-supplyl4'>Welcome!</div>
             <div className='div-supplyl4'>
-
               <div className='user1l4'>User</div>
               <div className='supply1l4'>Contractor/Supplier</div>
             </div>
@@ -27,7 +26,6 @@ function Supplylogin() {
                 <label>Name</label>
                 <input type="text" placeholder='Enter you name of  your company' />
               </div>
-
               <div className='user-passl4'>
                 <label>Password</label>
                 <input type="password" placeholder='Enter your password' />

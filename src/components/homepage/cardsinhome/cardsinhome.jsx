@@ -4,9 +4,15 @@ import './cardsinhome.css'
 import Send from '../../../pages/categorypage/Popup/Send'
 // import ViewDetails from './ViewDetails'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 
 function Cardsinhome() {
+    const [like, setLike] = useState('');
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8000/api/auth/like', { like })
+    }
     const [payment, setPayment] = useState(false)
     const band = () => setPayment(false)
     const Mymodel = () => {
@@ -51,7 +57,7 @@ function Cardsinhome() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
                                     {payment && <Send band={band} />}
                                 </div>
                             </div>
@@ -79,7 +85,7 @@ function Cardsinhome() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -109,7 +115,7 @@ function Cardsinhome() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -137,7 +143,7 @@ function Cardsinhome() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart"></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>

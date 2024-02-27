@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import { IoMdCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import Navbar from '../../../components/homepage/Navbar/navbar';
 import Footer from '../../../components/homepage/footer/footer';
+import axios from 'axios';
 
 function Contact() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setNumber] = useState('')
+    const [service, setService] = useState('')
+    const [msg, setMessage] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8000/api/auth/contact-us', { name, email, phone, service, msg })
+    }
     return (
         <>
             <Navbar />
@@ -18,64 +29,48 @@ function Contact() {
                     </div>
                 </div>
                 <div className='container1l5'>
-
                     <div className='infol5'>
-
                         <img src='image/div.jpg' alt='img' />
-
-                        <div className='prol5'>
-                            <div className='name5l'>
-                                <input type="text" placeholder='Name' />
+                        <form onSubmit={handleSubmit}>
+                            <div className='prol5'>
+                                <div className='name5l'>
+                                    <input type="text" placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                                </div>
+                                <div className='Emaill5'>
+                                    <input type="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                                </div>
                             </div>
-
-
-                            <div className='Emaill5'>
-                                <input type="email" placeholder='Email' />
+                            <div className='pro1l5'>
+                                <div className='name'>
+                                    <input type="number" placeholder='Phone no' onChange={(e) => setNumber(e.target.value)} />
+                                </div>
+                                <div className='emaill5'><input type="text" placeholder='Service Ex Cement Supplier' onChange={(e) => setService(e.target.value)} />
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div className='pro1l5'>
-                            <div className='name'>
-                                <input type="number" placeholder='Phone no' />
+                            <div className='pro1l5'>
+                                <textarea type="text" placeholder='Your Message' rows={5} onChange={(e) => setMessage(e.target.value)} />
                             </div>
-
-                            <div className='emaill5'><input type="text" placeholder='Service Ex Cement Supplier' />
+                            <div className='btndivl5'>
+                                <button type='submit'>Send</button>
                             </div>
-                        </div>
-
-
-                        <div className='pro1l5'>
-                            <textarea type="text" placeholder='Your Message' rows={5} />
-                        </div>
-                        <div className='btndivl5'>
-
-                            <button type='submit'>Send</button>
-                        </div>
+                        </form>
                     </div>
                     <div className='info1l5'>
-
                         <img src='image/div.jpg' alt='img' />
-
                         <div className='Al5'>
                             <p>  Our dedicated team is ready to provide you with the support and information you require.
                                 Your inquiries are important to us, and we look forward to hearing from you.</p>
                             <p id='ppp'> Let's connect and make your real estate and construction journey exceptional!</p>
                         </div>
-
                         <div className='iconl5'>
-
                             <div className='calll5'>
                                 <IoMdCall />
                                 <div className='havel5'>Have any question?
                                     <div className='hl5'>
                                         9877503362
                                     </div>
-
                                 </div>
-
                             </div>
-
                             <div className='gmaill5'>
                                 <MdEmail />
                                 <div className='have1l5'>
@@ -86,7 +81,6 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <Footer />
@@ -94,4 +88,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

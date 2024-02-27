@@ -41,32 +41,12 @@ function Signup() {
               </Link>
               <div className='dosulppyl2'> Already have an account.
                 <Link to='/' className='dkrl2'>Login</Link></div>
-
-
             </div>
-
-
-
-
           </div>
         </form>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
   )
 }
 
-export default Signup
+export default Signup;
