@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
 import './contactform.css'
-import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { setGetInTouch } from '../../../redux/actions/getintouchAction'
+// import axios from 'axios';
 
 const Contactform = () => {
+    const dispatch = useDispatch('')
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setNumber] = useState('')
     const [msg, setMessage] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/api/auth/get-in-touch-with-us', { name, email, phone, msg })
+        dispatch(setGetInTouch(name, email, phone, msg))
+        // axios.post('http://localhost:8000/api/auth/get-in-touch-with-us', { name, email, phone, msg })
     }
     return (
         <div>

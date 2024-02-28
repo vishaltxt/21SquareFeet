@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import './contact.css'
 import { IoMdCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { useDispatch } from 'react-redux';
 import Navbar from '../../../components/homepage/Navbar/navbar';
 import Footer from '../../../components/homepage/footer/footer';
-import axios from 'axios';
+// import axios from 'axios';
+import { setContact } from '../../../redux/actions/contactAction';
 
 function Contact() {
+    const dispatch = useDispatch('')
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setNumber] = useState('')
@@ -15,7 +18,8 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/api/auth/contact-us', { name, email, phone, service, msg })
+        dispatch(setContact(name, email, phone, service, msg))
+        // axios.post('http://localhost:8000/api/auth/contact-us', { name, email, phone, service, msg })
     }
     return (
         <>

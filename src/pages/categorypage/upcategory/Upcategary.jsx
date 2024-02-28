@@ -5,44 +5,52 @@ import Send from '../../../pages/categorypage/Popup/Send'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
-import axios from 'axios'
+// import axios from 'axios'
+import { useDispatch } from 'react-redux';
+import { setLike } from '../../../redux/actions/likeAction'
+import { setFetch } from '../../../redux/actions/fetchcardsAction'
+import { useSelector } from 'react-redux';
 
 
 function Upcategary() {
-    const [like, setLike] = useState('');
-    // const[fetch,setFetch]=useState('')
-    axios.get('http://localhost:8000/api/auth/fetch-contractor', {})
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => {
-            console.error('Error updating data:', error);
-        });
+    const dispatch = useDispatch('')
 
-    axios.get('http://localhost:8000/api/auth/search', {})
-        .then(response => {
-            console.log(response.data);
-        })
-        .catch(error => {
-            console.error('Error updating data:', error);
-        });
+    const [like, setLiked] = useState('');
+    // const [fetch, setFetch] = useState('')
+    // const myData = useSelector(state => state.fetchReducer.myData);
+    const handleFetch = (e) => {
+        e.preventDefault()
+        dispatch(setFetch(fetch))
+    }
+    // axios.get('http://localhost:8000/api/auth/fetch-contractor', {})
+    // .then(response => {
+    // console.log(response.data);
+    // })
+    // .catch(error => {
+    // console.error('Error updating data:', error);
+    // });
+
+    // axios.get('http://localhost:8000/api/auth/search', {})
+    // .then(response => {
+    // console.log(response.data);
+    // })
+    // .catch(error => {
+    // console.error('Error updating data:', error);
+    // });
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/api/auth/like', { like })
+        dispatch(setLike(like))
+        // axios.post('http://localhost:8000/api/auth/like', { like })
     }
-
 
     const [payment, setPayment] = useState(false)
 
     const band = () => setPayment(false)
     const Mymodel = () => {
-
         setPayment(true);
-
     }
 
     const navigate = useNavigate();
-
     const handleRedirect = () => {
         // Redirect logic here
         navigate('/ViewDetails'); // Use the navigate function from useNavigate
@@ -54,9 +62,6 @@ function Upcategary() {
         // Redirect logic here
         navigate1('/Searcher'); // Use the navigate function from useNavigate
     };
-
-
-
 
     return (
         <>
@@ -84,9 +89,8 @@ function Upcategary() {
                     {/*  */}
 
                 </div>
-                <div className="doubleCard">
+                <div className="doubleCard" onClick={handleFetch}>
                     {/* <div className="full0"> */}
-
                     {/*  */}
                     <div className="construction">
                         <div className="mm">
@@ -99,6 +103,9 @@ function Upcategary() {
                             </div>
                             <div className="right">
                                 <h4>Shubham Construction Co.</h4>
+                                {/* {myData.map(item => ( */}
+                                {/* <li key={item.id}>{item.name}</li> */}
+                                {/* ))} */}
                                 <p className='sme'>Shubham Construction Co. for your for your next Construction project</p>
 
                                 <div className='t30'>$100 to $200 per square foot</div>
@@ -109,7 +116,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} onSubmit={handleSubmit}></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} onSubmit={handleSubmit}></i>
                                     {payment && <Send band={band} />}
                                 </div>
                             </div>
@@ -142,7 +149,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)}></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -152,7 +159,7 @@ function Upcategary() {
 
                 {/* --------------------------second double------------------------------------------------------------------------ */}
 
-                <div className="doubleCard">
+                <div className="doubleCard" onClick={handleFetch}>
                     {/* <div className="full0"> */}
 
                     {/*  */}
@@ -175,7 +182,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)}></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)}></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
@@ -206,7 +213,7 @@ function Upcategary() {
                                 <div className="uright10">
                                     <button type='submit' onClick={Mymodel} className='numbtn'> Send Enquiry</button>
                                     <button type='submit' onClick={handleRedirect} className='numbtn0'>View Details</button>
-                                    <i className="fa-regular fa-heart" onChange={(e) => setLike(e.target.value)} ></i>
+                                    <i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} ></i>
                                     {/* {payment && <Send band={band} />}    */}
                                 </div>
                             </div>
