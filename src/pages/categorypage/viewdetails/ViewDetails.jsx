@@ -2,27 +2,27 @@ import React from 'react'
 import './viewdetails.css'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
+// import { useLocation } from 'react-router-dom';
+
 
 function ViewDetails() {
+    // const location = useLocation();
+    // const item = location.state.item;
     return (
         <>
             <Navbar />
             <div className="vmaindv">
                 <div className="constructiondv">
-
-
                     <div className="cont1dv">
                         <div className="photodv">
-
                             <img className='img0dv' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
                         </div>
-
                         <div className="rightdv">
                             <div className="mmdv">
                                 <div className="mm2dv"></div>
                                 <button type='submit' className='upperdv'>Send Enquiry</button>
                             </div>
-                            <h4>Shubham Construction Co.</h4>
+                            <h4>Shubham Construction</h4>
                             <p className='smedv'>Shubham Construction Co. for your for your next Construction project </p>
 
                             <div className="threes">
