@@ -55,9 +55,9 @@ function Upcategary() {
     }
 
     const navigate = useNavigate();
-    const handleRedirect = (item) => {
+    const handleRedirect = (id) => {
         // Redirect logic here
-        navigate('/ViewDetails', { state: { item } }); // Use the navigate function from useNavigate
+        navigate('/ViewDetails', { state: { id } }); // Use the navigate function from useNavigate
     };
 
     const navigate1 = useNavigate();
@@ -90,7 +90,6 @@ function Upcategary() {
                         search
                     </span>Search</button>
                     {/*  */}
-
                 </div>
                 {/* {data.myData.map((item, index) => ( */}
                 {data && data.myData.map((item) => (
@@ -104,8 +103,8 @@ function Upcategary() {
                             </div>
                             <div className="cont10">
                                 <div className="photo">
-                                    {/* <img className='img10' src={item.image} alt='' /> */}
-                                    <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' />
+                                    <img className='img10' src={item.image} alt='' />
+                                    {/* <img className='img10' src='https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg' alt='' /> */}
                                 </div>
                                 <div className="right">
                                     <h4>{item.name}</h4>
