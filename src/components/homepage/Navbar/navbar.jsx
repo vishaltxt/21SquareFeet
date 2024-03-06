@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import squarefeet from './navbar images/21SQFT B 1.png'
 import profile from './navbar images/Frame 6.png'
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchSearchResults } from '../../../redux/actions/searchAction'
 const Navbar = () => {
+    const dispatch = useDispatch();
+    const { data } = useSelector(state => state.searchReducer);
     const [showMenu, setShowMenu] = useState(false);
     const [isBurgerOpen, setIsBurgerOpen] = useState(false);
     const menuRef = useRef(null);
@@ -22,8 +26,7 @@ const Navbar = () => {
     }, []);
 
     // const [barclose, setBarClose] = useState('')
-    const [searchText, setSearchText] = useState('');
-    const [filteredKeywords, setFilteredKeywords] = useState([]);
+    // const [filteredKeywords, setFilteredKeywords] = useState([]);
     // const closeSideBar = () => {
     // setBarClose('false')
     // }
@@ -37,23 +40,26 @@ const Navbar = () => {
     };
 
     // function PopSearch() {
-    const availableKeywords = [
-        'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Node.js',
-        'Where to learn coding online', 'where to learn web design', 'How to create a website', 'Noida', 'Gaziabad', 'New Delhi'
-    ];
+    const [searchText, setSearchText] = useState('');
+    // const availableKeywords = [
+    // 'HTML', 'CSS', 'JavaScript', 'ReactJS', 'Node.js',
+    // 'Where to learn coding online', 'where to learn web design', 'How to create a website', 'Noida', 'Gaziabad', 'New Delhi'
+    // ];
 
-    // const [filteredKeywords, setFilteredKeywords] = useState([]);
+    const [filteredKeywords, setFilteredKeywords] = useState([]);
     const handleInputChange = (event) => {
-        const input = event.target.value.toLowerCase();
-        const filtered = availableKeywords.filter(keyword =>
-            keyword.toLowerCase().includes(input)
-        );
-        setFilteredKeywords(filtered);
+        const input = event.target.value;
+        // const filtered = data.filter(keyword =>
+        // keyword.toLowerCase().includes(input)
+        // );
+        // setFilteredKeywords(filtered);
         setSearchText(input);
+        dispatch(fetchSearchResults(input));
     };
     const handleKeywordClick = (keyword) => {
         setSearchText(keyword);
         setFilteredKeywords([]);
+        dispatch(fetchSearchResults(keyword));
     };
 
     return (
@@ -71,6 +77,7 @@ const Navbar = () => {
                     <div className="result-box">
                         <ul>
                             {filteredKeywords.map((keyword, index) => (
+                                // {Array.isArray(data) && data.map((keyword, index) => (
                                 <li key={index} onClick={() => handleKeywordClick(keyword)}>{keyword}</li>
                             ))}
                         </ul>

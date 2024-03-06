@@ -38,21 +38,21 @@ function Contact() {
                         <form onSubmit={handleSubmit}>
                             <div className='prol5'>
                                 <div className='name5l'>
-                                    <input type="text" placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                                    <input type="text" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
                                 </div>
                                 <div className='Emaill5'>
-                                    <input type="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                                    <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
                                 </div>
                             </div>
                             <div className='pro1l5'>
                                 <div className='name'>
-                                    <input type="number" placeholder='Phone no' onChange={(e) => setNumber(e.target.value)} />
+                                    <input type="number" placeholder='Phone no' value={phone} onChange={(e) => setNumber(e.target.value)} />
                                 </div>
-                                <div className='emaill5'><input type="text" placeholder='Service Ex Cement Supplier' onChange={(e) => setService(e.target.value)} />
+                                <div className='emaill5'><input type="text" placeholder='Service Ex Cement Supplier' value={service} onChange={(e) => setService(e.target.value)} />
                                 </div>
                             </div>
                             <div className='pro1l5'>
-                                <textarea type="text" placeholder='Your Message' rows={5} onChange={(e) => setMessage(e.target.value)} />
+                                <textarea type="text" placeholder='Your Message' rows={5} value={msg} onChange={(e) => setMessage(e.target.value)} />
                             </div>
                             <div className='btndivl5'>
                                 <button type='submit'>Send</button>

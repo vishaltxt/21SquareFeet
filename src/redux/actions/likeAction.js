@@ -2,11 +2,11 @@ import axios from 'axios';
 import { LIKE_REQUEST, LIKE_SUCCESS, LIKE_FAILURE } from '../constant/constant'
 // export const SET_CONTACT = 'SET_CONTACT';
 
-export const setLike = () => {
+export const setLike = (id) => {
     return async (dispatch) => {
         dispatch({ type: LIKE_REQUEST });
         try {
-            const response = await axios.post('http://localhost:8000/api/auth/like', {});
+            const response = await axios.post('http://localhost:8000/api/auth/like', { id });
             // dispatch({
             // type: SET_LIKE,
             // payload: response.data

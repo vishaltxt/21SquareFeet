@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './read.css'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer';
+import { setLike } from '../../../redux/actions/likeAction';
+import { useDispatch } from 'react-redux';
 
 function Read() {
+  const dispatch = useDispatch('')
+  const [like, setLiked] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch(setLike(like))
+    // axios.post('http://localhost:8000/api/auth/like', { like })
+  }
   return (
     <>
       <Navbar />
@@ -80,7 +89,7 @@ function Read() {
               <p>Remember, the key is to design a space that not only looks good but also makes you feel good every time you step into it. Happy designing!
               </p></div>
 
-            <div className='blog-ico'><i className="fa-regular fa-heart"></i> <span> +1</span>
+            <div className='blog-ico'><i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} onSubmit={handleSubmit}></i> <span> +1</span>
             </div>
           </div>
         </div>

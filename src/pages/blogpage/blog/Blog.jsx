@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './blog.css'
 import { Link } from 'react-router-dom'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
+import { useDispatch } from 'react-redux';
+import { setLike } from '../../../redux/actions/likeAction'
 
 function Blog() {
+    const dispatch = useDispatch('')
+    const [like, setLiked] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        dispatch(setLike(like))
+        // axios.post('http://localhost:8000/api/auth/like', { like })
+    }
     return (
         <>
             <Navbar />
@@ -47,7 +57,7 @@ function Blog() {
                         <div className='link'>
                             <Link to='/read' className='non' >Read More <i className="fa-solid fa-chevron-right"></i></Link>
                         </div>
-                        <div className='blog-icons'><i className="fa-regular fa-heart"></i> <span> +1</span>
+                        <div className='blog-icons'><i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} onSubmit={handleSubmit}></i> <span> +1</span>
                         </div>
 
                     </div>
@@ -89,7 +99,7 @@ function Blog() {
                         <div className='Dkr13-link'>
                             <Link to='/read1' className='ccd' >Read More <i className="fa-solid fa-chevron-right"></i></Link>
                         </div>
-                        <div className='blog-icons'><i className="fa-regular fa-heart"></i><span>0</span></div>
+                        <div className='blog-icons'><i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} onSubmit={handleSubmit}></i><span>0</span></div>
                     </div>
 
                 </div>
@@ -99,4 +109,4 @@ function Blog() {
     )
 }
 
-export default Blog
+export default Blog;

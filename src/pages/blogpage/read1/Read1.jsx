@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './read1.css'
 import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
+import { useDispatch } from 'react-redux'
+import { setLike } from '../../../redux/actions/likeAction'
 
 function Read() {
+  const dispatch = useDispatch('')
+  const [like, setLiked] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch(setLike(like))
+    // axios.post('http://localhost:8000/api/auth/like', { like })
+  }
   return (
     <>
       <Navbar />
@@ -67,17 +76,8 @@ function Read() {
             <div className='R10-para'>
               <p> The area extends beyond the work zone and returns traffic to its normal flow. This often involves a downstream taper where drivers are directed by cone placement. Cones serve as a visual cue to drivers, directing them back into the original lane(s) that were closed at the start of the construction area.3</p>
             </div>
-
-
-            <div className='blog-icod'><i className="fa-regular fa-heart"></i> <span> 0</span>
+            <div className='blog-icod'><i className="fa-regular fa-heart" onChange={(e) => setLiked(e.target.value)} onSubmit={handleSubmit}></i> <span> 0</span>
             </div>
-
-
-
-
-
-
-
           </div>
           <div className='R12'> <a href='' className='ang'> <span>Next Post</span> </a></div>
           <div className='R13'>
@@ -108,4 +108,4 @@ function Read() {
   )
 }
 
-export default Read
+export default Read;
