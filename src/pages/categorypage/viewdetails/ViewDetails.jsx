@@ -33,7 +33,7 @@ function ViewDetails() {
                             <hr />
 
                             <div className="urightdv">
-                                <p><i className="fa-solid fa-location-dot"></i>{item.address}</p>
+                                <p><i className="fa-solid fa-location-dot"></i>{item.city}</p>
                             </div>
                             {/* {payment && <Send band={band} />}  onClick={Mymodel} */}
                         </div>

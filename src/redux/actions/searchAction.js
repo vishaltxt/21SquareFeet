@@ -1,25 +1,25 @@
 import axios from 'axios';
 import { SEARCH_REQUEST, SEARCH_SUCCESS, SEARCH_FAILURE } from '../constant/constant';
 
-export const fetchSearchResults = (data) => {
+export const fetchSearchResults = () => {
     return async (dispatch) => {
         dispatch({ type: SEARCH_REQUEST });
-        // console.log(data)
-        // console.log(keyword)
+        console.log()
+        // console.log(id)
         try {
-            const response = await axios.get(`http://localhost:8000/api/auth/search?search=${data}`)
+            const response = await axios.get(`http://localhost:8000/api/auth/search`, {})
             // .then((response) => response.json())
             // .then((json) => {
             // console.log(json);
             // });
-            console.log(data)
+            // console.log(response)
             // dispatch(setSearchResults(response.data.data));
             dispatch({
                 type: SEARCH_SUCCESS,
                 payload: response.data
 
             })
-            console.log(response.data)
+            // console.log(response.data)
         } catch (error) {
             dispatch({
                 type: SEARCH_FAILURE,

@@ -7,7 +7,6 @@ import Navbar from '../../../components/homepage/Navbar/navbar'
 import Footer from '../../../components/homepage/footer/footer'
 // import axios from 'axios'
 import { useEffect } from 'react'
-
 import { useDispatch } from 'react-redux';
 import { setLike } from '../../../redux/actions/likeAction'
 import { setFetch } from '../../../redux/actions/fetchcardsAction'
@@ -60,12 +59,12 @@ function Upcategary() {
         navigate('/ViewDetails', { state: { id } }); // Use the navigate function from useNavigate
     };
 
-    const navigate1 = useNavigate();
+    // const navigate1 = useNavigate();
 
-    const handleRedirect1 = () => {
-        // Redirect logic here
-        navigate1('/Searcher'); // Use the navigate function from useNavigate
-    };
+    // const handleRedirect1 = () => {
+    // Redirect logic here
+    //  navigate1('/Searcher');  Use the navigate function from useNavigate
+    // };
 
     return (
         <>
@@ -86,7 +85,7 @@ function Upcategary() {
                     <button type='submit' className='btn1'>Budget<span class="material-symbols-outlined">
                         expand_more
                     </span> </button>
-                    <button type='submit' onClick={handleRedirect1} className='btn2' ><span class="material-symbols-outlined">
+                    <button type='submit' className='btn2' ><span class="material-symbols-outlined">
                         search
                     </span>Search</button>
                     {/*  */}
@@ -110,9 +109,9 @@ function Upcategary() {
                                     <h4>{item.name}</h4>
                                     <p className='sme'>{item.name} Co. for your for your next Construction project</p>
 
-                                    <div className='t30'>{item.address}</div>
+                                    <div className='t30'>$100 to $200 per square foot</div>
                                     <div className="loca0">
-                                        <span><i className="fa-solid fa-location-dot"></i>{item.state}</span>
+                                        <span><i className="fa-solid fa-location-dot"></i>{item.city},{item.state}</span>
 
                                     </div>
                                     <div className="uright10">
@@ -125,11 +124,8 @@ function Upcategary() {
 
                             </div>
                         </div>
-
-
                         {/* <div className="full1"> */}
                         {/* <span className='upper'>Construction</span> */}
-
                         {/* <div className="construction"> */}
                         {/* <div className="mm"> */}
                         {/* <div className="mm2"></div> */}

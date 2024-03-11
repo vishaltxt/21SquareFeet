@@ -5,7 +5,7 @@ const initialSearchState = {
     loading: false,
     error: null,
     success: false,
-    // data: []
+    data: []
 };
 
 const searchReducer = (state = initialSearchState, action) => {
@@ -33,7 +33,6 @@ const searchReducer = (state = initialSearchState, action) => {
                 error: action.error,
                 success: false
             }
-
         default:
             return state;
     }
