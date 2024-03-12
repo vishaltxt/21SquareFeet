@@ -7,7 +7,7 @@ import Footer from '../../../components/homepage/footer/footer';
 function Searcher() {
     const location = useLocation();
     const results = location.state.results;
-    console.log(results)
+    // console.log(results)
     // Group results by city
     const resultsByCity = {};
     if (Array.isArray(results)) {
@@ -19,7 +19,7 @@ function Searcher() {
             resultsByCity[key].push(result);
         });
     }
-    console.log('Results by city:', resultsByCity);
+    // console.log('Results by city:', resultsByCity);
     return (
         <>
             <Navbar />

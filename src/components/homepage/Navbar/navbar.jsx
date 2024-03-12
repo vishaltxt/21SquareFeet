@@ -84,7 +84,7 @@ const Navbar = () => {
         item.state.toLowerCase().includes(searchQuery.toLowerCase()) ||
         (`${item.city}, ${item.state}`.toLowerCase().includes(searchQuery.toLowerCase()))
     ) : [];
-    console.log(filteredResults)
+    // console.log(filteredResults)
     // console.log(searchResults.data)
     const navigate = useNavigate();
     const handleRedirect = () => {
