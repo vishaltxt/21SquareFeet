@@ -84,11 +84,12 @@ const Navbar = () => {
         item.state.toLowerCase().includes(searchQuery.toLowerCase()) ||
         (`${item.city}, ${item.state}`.toLowerCase().includes(searchQuery.toLowerCase()))
     ) : [];
-
+    console.log(filteredResults)
+    // console.log(searchResults.data)
     const navigate = useNavigate();
-    const handleRedirect = (id) => {
+    const handleRedirect = () => {
         // Redirect logic here
-        navigate('/searcher', { state: { id } });
+        navigate('/searcher', { state: { results: filteredResults } });
         setShowResults(false);
     };
     return (
@@ -100,7 +101,7 @@ const Navbar = () => {
                 <div className="search-box">
                     <div className="row">
                         <input className='search-nav-search' type="text" id="input-box" value={searchQuery} onChange={handleSearchChange} onKeyPress={handleKeyPress} placeholder="Search Keywords" autocomplete="off" />
-                        <button><i className="fa-solid fa-magnifying-glass"></i></button>
+                        <button><i className="fa-solid fa-magnifying-glass" ></i></button>
                     </div>
                     {showResults && (
                         <div className="result-box" ref={resultBoxRef}>
@@ -115,6 +116,7 @@ const Navbar = () => {
                                     </li>
                                 ))}
                             </ul>
+                            {/* console.log(object) */}
                         </div>
                     )}
                 </div>

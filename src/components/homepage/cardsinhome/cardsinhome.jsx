@@ -16,6 +16,7 @@ function Cardsinhome() {
         dispatch(setFetch());
     }, [dispatch]);
     const { data } = useSelector(state => state.fetchReducer);
+    const limitedData = data && data.myData ? data.myData.slice(0, 3) : [];
     const handleFetch = (id) => {
         // e.preventDefault()
         dispatch(setFetch(id))
@@ -48,7 +49,7 @@ function Cardsinhome() {
                 <h1 className='cardsinhome-head'>Recently Viewed</h1>
             </div>
             <div className="cardsinhome-main">
-                {data && data.myData.map((item) => (
+                {limitedData.map((item) => (
                     <div className="doubleCard-inhome" key={item.id} onClick={() => handleFetch(item.id)}>
                         {/* <div className="full0"> */}
                         {/*  */}
